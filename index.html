@@ -37,6 +37,8 @@
         <link rel="stylesheet" href="assets/css/main.min.css">
         <!-- theme toggle css -->
         <link rel="stylesheet" href="assets/css/theme-toggle.css">
+        <!-- d3 skills circular pack css -->
+        <link rel="stylesheet" href="assets/css/skills-pack.css">
         <script>
             (function() {
                 try {
@@ -493,6 +495,49 @@
                                                                 </ul>
                                                             </div>
                                                         </div>
+                                                        <div class="skills-pack-card mt-60">
+                                                            <div class="skills-pack-header">
+                                                                <div class="row align-items-end gaper">
+                                                                    <div class="col-12 col-lg-8">
+                                                                        <span class="skills-pack-badge">
+                                                                            <i class="fa-solid fa-chart-pie"></i>
+                                                                            Interactive Visual Universe
+                                                                        </span>
+                                                                        <h3 class="title-lg text-white mb-2">Design Tools & Technical Skills</h3>
+                                                                        <p class="text-septenary mb-0">Interactive D3.js circular packing hierarchy mapping proficiency in creative software, UI/UX systems, and frontend code. Click or hover any circle to explore.</p>
+                                                                    </div>
+                                                                    <div class="col-12 col-lg-4 text-lg-end">
+                                                                        <a href="about-me.html" class="skills-reset-btn text-decoration-none">
+                                                                            <i class="fa-solid fa-arrow-right"></i>
+                                                                            Full Skills & Bio
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="skills-pack-canvas-wrap" id="skillsCircularPackIndex">
+                                                                <!-- D3 Circular Packing SVG rendered here -->
+                                                            </div>
+
+                                                            <div class="skills-pack-legend">
+                                                                <div class="skills-legend-item">
+                                                                    <span class="skills-legend-dot" style="background:#ff6b6b"></span>
+                                                                    <span>Design Tools</span>
+                                                                </div>
+                                                                <div class="skills-legend-item">
+                                                                    <span class="skills-legend-dot" style="background:#20e3b2"></span>
+                                                                    <span>UI/UX Systems</span>
+                                                                </div>
+                                                                <div class="skills-legend-item">
+                                                                    <span class="skills-legend-dot" style="background:#00f2fe"></span>
+                                                                    <span>Web & Frontend</span>
+                                                                </div>
+                                                                <div class="skills-legend-item">
+                                                                    <span class="skills-legend-dot" style="background:#ffb300"></span>
+                                                                    <span>Platforms & CMS</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="banner__history fade-wrapper">
@@ -793,5 +838,9 @@
         <script src="assets/js/custom.js"></script>
         <!-- theme switcher js -->
         <script src="assets/js/theme-switcher.js"></script>
+        <!-- d3 library -->
+        <script src="assets/js/d3.v7.min.js"></script>
+        <!-- d3 circular packing chart js -->
+        <script src="assets/js/skills-circle-pack.js"></script>
     </body>
 </html>

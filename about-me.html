@@ -35,6 +35,8 @@
         <link rel="stylesheet" href="assets/css/main.min.css">
         <!-- theme toggle css -->
         <link rel="stylesheet" href="assets/css/theme-toggle.css">
+        <!-- d3 skills circular pack css -->
+        <link rel="stylesheet" href="assets/css/skills-pack.css">
         <script>
             (function() {
                 try {
@@ -405,6 +407,77 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- ==== d3 circular packing chart start ==== -->
+                                    <div class="col-12 mt-60">
+                                        <div class="skills-pack-card">
+                                            <div class="skills-pack-header">
+                                                <div class="row align-items-end gaper">
+                                                    <div class="col-12 col-lg-8">
+                                                        <span class="skills-pack-badge">
+                                                            <i class="fa-solid fa-chart-pie"></i>
+                                                            Interactive Visual Universe
+                                                        </span>
+                                                        <h3 class="title-lg text-white mb-2">Design Tools & Technical Skills Proficiency</h3>
+                                                        <p class="text-septenary mb-0">A dynamic D3.js circular packing hierarchy mapping proficiency across creative tools, design systems, and frontend engineering. Click any circle to zoom in, hover for detail breakdowns, or filter by category.</p>
+                                                    </div>
+                                                    <div class="col-12 col-lg-4 text-lg-end">
+                                                        <button id="resetSkillsZoom" class="skills-reset-btn" type="button" title="Reset Zoom">
+                                                            <i class="fa-solid fa-arrows-rotate"></i>
+                                                            Reset View
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="skills-pack-controls">
+                                                <div class="skills-filter-group">
+                                                    <button class="skills-filter-btn active" data-skills-filter="all" type="button">
+                                                        <i class="fa-solid fa-layer-group"></i> All Domains
+                                                    </button>
+                                                    <button class="skills-filter-btn" data-skills-filter="design-tools" type="button">
+                                                        <i class="fa-solid fa-palette"></i> Design Tools
+                                                    </button>
+                                                    <button class="skills-filter-btn" data-skills-filter="ui-ux" type="button">
+                                                        <i class="fa-solid fa-bezier-curve"></i> UI/UX Systems
+                                                    </button>
+                                                    <button class="skills-filter-btn" data-skills-filter="web-frontend" type="button">
+                                                        <i class="fa-solid fa-code"></i> Web & Frontend
+                                                    </button>
+                                                    <button class="skills-filter-btn" data-skills-filter="platforms-cms" type="button">
+                                                        <i class="fa-solid fa-globe"></i> Platforms & CMS
+                                                    </button>
+                                                </div>
+                                                <div class="skills-pack-meta d-none d-md-flex">
+                                                    <span><i class="fa-regular fa-circle-dot me-1"></i> 24 Skills Mapped</span>
+                                                    <span><i class="fa-solid fa-bolt me-1 text-warning"></i> 90% Avg Rating</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="skills-pack-canvas-wrap" id="skillsCircularPack">
+                                                <!-- D3 Circular Packing SVG rendered here -->
+                                            </div>
+
+                                            <div class="skills-pack-legend">
+                                                <div class="skills-legend-item" data-skills-filter="design-tools">
+                                                    <span class="skills-legend-dot" style="background:#ff6b6b"></span>
+                                                    <span>Design & Creative Software</span>
+                                                </div>
+                                                <div class="skills-legend-item" data-skills-filter="ui-ux">
+                                                    <span class="skills-legend-dot" style="background:#20e3b2"></span>
+                                                    <span>UI/UX & Product Design Systems</span>
+                                                </div>
+                                                <div class="skills-legend-item" data-skills-filter="web-frontend">
+                                                    <span class="skills-legend-dot" style="background:#00f2fe"></span>
+                                                    <span>Web & Frontend Engineering</span>
+                                                </div>
+                                                <div class="skills-legend-item" data-skills-filter="platforms-cms">
+                                                    <span class="skills-legend-dot" style="background:#ffb300"></span>
+                                                    <span>Platforms, CMS & Performance</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- ==== / d3 circular packing chart end ==== -->
                                 </div>
                             </div>
                         </section>
@@ -836,5 +909,9 @@
         <script src="assets/js/custom.js"></script>
         <!-- theme switcher js -->
         <script src="assets/js/theme-switcher.js"></script>
+        <!-- d3 library -->
+        <script src="assets/js/d3.v7.min.js"></script>
+        <!-- d3 circular packing chart js -->
+        <script src="assets/js/skills-circle-pack.js"></script>
     </body>
 </html>
