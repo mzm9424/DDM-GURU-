@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- required meta -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- #favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+        <!-- #title -->
+        <title>DDmGurU | d'Manifestor Portfolio</title>
+        <!-- #keywords -->
+        <meta name="keywords" content="d'Manifestor, portfolio">
+        <!-- #description -->
+        <meta name="description" content="d'Manifestor Portfolio">
+        <!-- ==== css dependencies start ==== -->
+        <!-- bootstrap five css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- bootstrap icons css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+        <!-- material icons css -->
+        <link rel="stylesheet" href="assets/css/material-icons.css">
+        <!-- font awesome six css -->
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <!-- nice select css -->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!-- magnific popup css -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- slick css -->
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!-- odometer css -->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!-- ==== / css dependencies end ==== -->
+        <!-- main css -->
+        <link rel="stylesheet" href="assets/css/main.min.css">
+        <!-- theme toggle css -->
+        <link rel="stylesheet" href="assets/css/theme-toggle.css">
+        <script>
+            (function() {
+                try {
+                    var saved = localStorage.getItem("ddmguru_theme");
+                    var theme = saved || (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+                    document.documentElement.setAttribute("data-theme", theme);
+                } catch(e) {}
+            })();
+        </script>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <!-- ==== preloader start ==== -->
+        <div id="preloader">
+            <div id="loader"></div>
+        </div>
+        <!-- ==== / preloader end ==== -->
+        <!-- ==== mouse cursor drag start ==== -->
+        <div class="mouseCursor cursor-outer"></div>
+        <div class="mouseCursor cursor-inner">
+            <span>Drag</span>
+        </div>
+        <!-- ==== / mouse cursor drag end ==== -->
+        <!-- ==== page wrapper start ==== -->
+        <div class="my-app">
+            <!-- ==== header start ==== -->
+            <header class="header">
+                <div class="primary-navbar tertiary--navbar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <nav class="navbar p-0">
+                                    <div class="navbar__logo">
+                                        <a href="index.html" aria-label="go to home">
+                                            <img src="assets/images/logo-two.png" alt="Image">
+                                        </a>
+                                    </div>
+                                    <div class="navbar__options">
+                                                                                <button class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+                                            <span class="theme-toggle-icon">
+                                                <i class="bi bi-sun-fill sun-icon"></i>
+                                                <i class="bi bi-moon-stars-fill moon-icon"></i>
+                                            </span>
+                                        </button>
+<button class="open-offcanvas-nav d-flex" aria-label="toggle mobile menu" title="open offcanvas menu"></button>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ==== / header end ==== -->
+            <!-- ==== offcanvas nav start ==== -->
+            <div class="offcanvas-nav">
+                <div class="offcanvas-menu">
+                    <nav class="offcanvas-menu__wrapper">
+                        <div class="offcanvas-menu__header nav-fade">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/images/logo-two.png" alt="" title="">
+                                </a>
+                            </div>
+                            <button aria-label="close offcanvas menu" class="close-offcanvas-menu">
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="offcanvas-menu__list">
+                            <div class="navbar__menu">
+                                <ul class="navbar__list">
+                                    <li class="navbar__item navbar__item--has-children nav-fade">
+                                        <button aria-label="dropdown menu" class="navbar__dropdown-label">Home</button>
+                                        <ul class="navbar__sub-menu">
+                                            <li>
+                                                <a href="index.html">Creative Designer</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-two.html">Web Developer</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-three.html">Freelancer</a>
+                                            </li>
+                                            <li>
+                                                <a href="index-four.html">Digital Marketter</a>
+                                            </li>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="navbar__item nav-fade">
+                                        <a href="about-me.html">About Me</a>
+                                    </li>
+                                    <li class="navbar__item navbar__item--has-children nav-fade">
+                                        <button aria-label="dropdown menu" class="navbar__dropdown-label">Services</button>
+                                        <ul class="navbar__sub-menu">
+                                            <li>
+                                                <a href="services.html">Services</a>
+                                            </li>
+                                            <li>
+                                                <a href="service-single.html">Category All</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="navbar__item navbar__item--has-children nav-fade">
+                                        <button aria-label="dropdown menu" class="navbar__dropdown-label">Projects</button>
+                                        <ul class="navbar__sub-menu">
+                                            <li>
+                                                <a href="case-study.html">My Projects</a>
+                                            </li>
+                                            <li>
+                                                <a href="case-study-single.html">Project Details</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="navbar__item navbar__item--has-children nav-fade">
+                                        <button aria-label="dropdown menu" class="navbar__dropdown-label">Blog</button>
+                                        <ul class="navbar__sub-menu">
+                                            <li>
+                                                <a href="blog.html">Resources</a>
+                                            </li>
+                                            <li>
+                                                <a href="blog-single.html">Product Strategy</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="offcanvas-menu__options nav-fade">
+                            <div class="offcanvas__mobile-options d-flex">
+                                <a href="contact-me.html" class="btn btn--secondary">Let's Talk</a>
+                            </div>
+                        </div>
+                        <div class="offcanvas-menu__social social nav-fade">
+                            <a href="https://www.twitter.com/" class="tw" target="_blank">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="in" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.facebook.com/" class="fb" target="_blank">
+                                <i class="fa-brands fa-facebook-messenger"></i>
+                            </a>
+                            <a href="https://www.youtube.com/" class="yt" target="_blank">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div id="smooth-wrapper">
+                <div id="smooth-content">
+                    <main>
+                        <!-- ==== banner start ==== -->
+                        <section class="banner-four bg-img" data-background="assets/images/banner/banner-four-bg.png">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="banner-four-inner pb-120">
+                                            <div class="row">
+                                                <div class="col-12 col-xxl-9">
+                                                    <div class="banner__content-four text-start">
+                                                        <h1 class="light-title-xxl title-anim">
+                                                            <span class="fw-7">Freelance Digital</span>
+                                                            Marketer
+                                                        </h1>
+                                                        <div class="pt-120 banner-content__inner">
+                                                            <div class="content">
+                                                                <h4 class="title-md title-anim">
+                                                                    CURRENTLY AVAILABLE FOR
+                                                                        FREELANCE WORLDWIDE  🌎
+                                                                </h4>
+                                                            </div>
+                                                            <div class="arrow-wrapper">
+                                                                <span class="arrow"></span>
+                                                            </div>
+                                                            <form action="#" method="post">
+                                                                <div class="input-group">
+                                                                    <input
+                                                                        type="email"
+                                                                        name="subs-mail"
+                                                                        id="subsMail"
+                                                                        placeholder="Your Email"
+                                                                        required
+                                                                    >
+                                                                    <button type="submit">
+                                                                        <i class="fa-solid fa-paper-plane"></i>
+                                                                        <span class="d-none d-sm-inline-flex">Subscribe</span>
+                                                                    </button>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="banner-sponsor pt-120">
+                                                            <h6 class="title-anim">COMPANIES I WORKED WITH</h6>
+                                                            <div class="spon-wrap">
+                                                                <div class="spon-single">
+                                                                    <img src="assets/images/company/google-cloud.png" alt="Image">
+                                                                </div>
+                                                                <div class="spon-single">
+                                                                    <img src="assets/images/company/google-partner.png" alt="Image">
+                                                                </div>
+                                                                <div class="spon-single">
+                                                                    <img src="assets/images/company/meta-partner.png" alt="Image">
+                                                                </div>
+                                                                <div class="spon-single">
+                                                                    <img src="assets/images/company/shopify.png" alt="Image">
+                                                                </div>
+                                                                <div class="spon-single">
+                                                                    <img src="assets/images/company/tiktok.png" alt="Image">
+                                                                </div>
+                                                                <div class="spon-single">
+                                                                    <img src="assets/images/company/google-cloud.png" alt="Image">
+                                                                </div>
+                                                                <div class="spon-single">
+                                                                    <img src="assets/images/company/google-partner.png" alt="Image">
+                                                                </div>
+                                                                <div class="spon-single">
+                                                                    <img src="assets/images/company/meta-partner.png" alt="Image">
+                                                                </div>
+                                                                <div class="spon-single">
+                                                                    <img src="assets/images/company/shopify.png" alt="Image">
+                                                                </div>
+                                                                <div class="spon-single">
+                                                                    <img src="assets/images/company/tiktok.png" alt="Image">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <img src="assets/images/banner/banner-four-thumb.png" alt="Image" class="banner-four-thumb">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== banner end ==== -->
+                        <!-- ==== drive section start ==== -->
+                        <section class="pt-120 drive">
+                            <div class="container">
+                                <div class="row align-items-center justify-content-between gaper section__header--secondary">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="section__header text-center text-lg-start mb-0">
+                                            <span class="sub-title title-sm text-white">What I Do</span>
+                                            <h2 class="title-xxl title-anim">
+                                                Driving a better way
+                                                of doing marketing
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-5">
+                                        <div class="text-center text-lg-start">
+                                            <p class="text-senary">To achieve our goal, we aimed to create a modern and sleek website design that improved user experience, increased engagement, and better reflected the brand's identity.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="drive__inner">
+                                            <div class="row gaper align-items-center">
+                                                <div class="col-12 col-lg-12 col-xxl-5">
+                                                    <div class="generate__content">
+                                                        <div>
+                                                            <button class="generate__content-btn generate__content-btn-active">
+                                                                <span class="content">
+                                                                    <span class="title-md">Search engine optimization</span>
+                                                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                                                </span>
+                                                            </button>
+                                                            <button class="generate__content-btn">
+                                                                <span class="content">
+                                                                    <span class="title-md">Paid search marketing</span>
+                                                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                                                </span>
+                                                            </button>
+                                                            <button class="generate__content-btn">
+                                                                <span class="content">
+                                                                    <span class="title-md">Conversion rate optimization</span>
+                                                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                                                </span>
+                                                            </button>
+                                                            <button class="generate__content-btn">
+                                                                <span class="content">
+                                                                    <span class="title-md">Social media marketing</span>
+                                                                    <i class="fa-solid fa-circle-arrow-right"></i>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-12 col-xxl-7">
+                                                    <div class="generate__thumb">
+                                                        <div class="tab-content active">
+                                                            <div class="tab-content-inner">
+                                                                <div class="tab-left">
+                                                                    <p class="fw-7">Increase your organic traffic by ranking high on search engines and AI discovery tools like Chat GPT</p>
+                                                                    <ul>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Keyword and competitor research
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            SKAGS (single keyword ad groups)
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Negative keyword pruning
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Ad copy optimization
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Backlink Generation
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Keyword & competitor research
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="tab-right">
+                                                                    <img src="assets/images/thumb-tab.png" alt="Image">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <div class="tab-content-inner">
+                                                                <div class="tab-left">
+                                                                    <p class="fw-7">Increase your organic traffic by ranking high on search engines and AI discovery tools like Chat GPT</p>
+                                                                    <ul>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Keyword and competitor research
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            SKAGS (single keyword ad groups)
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Negative keyword pruning
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Ad copy optimization
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Backlink Generation
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Keyword & competitor research
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="tab-right">
+                                                                    <img src="assets/images/thumb-tab.png" alt="Image">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <div class="tab-content-inner">
+                                                                <div class="tab-left">
+                                                                    <p class="fw-7">Increase your organic traffic by ranking high on search engines and AI discovery tools like Chat GPT</p>
+                                                                    <ul>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Keyword and competitor research
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            SKAGS (single keyword ad groups)
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Negative keyword pruning
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Ad copy optimization
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Backlink Generation
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Keyword & competitor research
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="tab-right">
+                                                                    <img src="assets/images/thumb-tab.png" alt="Image">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tab-content">
+                                                            <div class="tab-content-inner">
+                                                                <div class="tab-left">
+                                                                    <p class="fw-7">Increase your organic traffic by ranking high on search engines and AI discovery tools like Chat GPT</p>
+                                                                    <ul>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Keyword and competitor research
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            SKAGS (single keyword ad groups)
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Negative keyword pruning
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Ad copy optimization
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Backlink Generation
+                                                                        </li>
+                                                                        <li class="text-md text-senary d-flex align-items-center">
+                                                                            <i class="fa-solid fa-check"></i>
+                                                                            Keyword & competitor research
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="tab-right">
+                                                                    <img src="assets/images/thumb-tab.png" alt="Image">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / drive section end ==== -->
+                        <!-- ==== fix start ==== -->
+                        <section class="pt-120 fix">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-xl-8">
+                                        <div class="section__header text-center">
+                                            <h2 class="title-xxl title-anim">
+                                                I Combines
+                                                <img src="assets/images/avatar-four.png" alt="Image">
+                                                <span class="fw-7">Customer Data</span>
+                                                With
+                                                <span class="fw-7">Thoughtful</span>
+                                                Work
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-xl-10">
+                                        <div class="section__header text-center">
+                                            <p class="text-xl">
+                                                We are a five-star rated holistic full-service digital marketing agencies, serving thousands of clients. Our digital agency covers all aspects of internet marketing: SEO, social media, and PPC management, all the way to email marketing, website design, and web development.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fix-img">
+                                <video
+                                    muted
+                                    loop
+                                    autoplay
+                                    controls
+                                >
+                                    <source src="assets/images/meet.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </section>
+                        <!-- ==== / fix end ==== -->
+                        <!-- ==== project start ==== -->
+                        <section class="pt-120">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="section__header text-center">
+                                            <h2 class="title-xxl title-anim">Case Study</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="crc">
+                                <ul class="case-study-wrapper">
+                                    <li class="case-study-name">
+                                        <a href="case-study.html" class="hover-target">Web Development</a>
+                                    </li>
+                                    <li class="case-study-name">
+                                        <a href="case-study.html" class="hover-target">UI Design</a>
+                                    </li>
+                                    <li class="case-study-name">
+                                        <a href="case-study.html" class="hover-target">Digital Marketting</a>
+                                    </li>
+                                    <li class="case-study-name">
+                                        <a href="case-study.html" class="hover-target">Product Developmnt</a>
+                                    </li>
+                                </ul>
+                                <ul class="case-study-images">
+                                    <li>
+                                        <div class="img-hero-background">
+                                            <span>
+                                                <img src="assets/images/project/one.png" alt="Image">
+                                            </span>
+                                            <span>
+                                                <img src="assets/images/project/two.png" alt="Image">
+                                            </span>
+                                            <span>
+                                                <img src="assets/images/project/three.png" alt="Image">
+                                            </span>
+                                            <span>
+                                                <img src="assets/images/project/four.png" alt="Image">
+                                            </span>
+                                        </div>
+                                        <div class="hero-number-back">01</div>
+                                        <div class="hero-number">01</div>
+                                        <div class="hero-number-fixed">04</div>
+                                    </li>
+                                    <li>
+                                        <div class="img-hero-background">
+                                            <span>
+                                                <img src="assets/images/project/one.png" alt="Image">
+                                            </span>
+                                            <span>
+                                                <img src="assets/images/project/two.png" alt="Image">
+                                            </span>
+                                            <span>
+                                                <img src="assets/images/project/three.png" alt="Image">
+                                            </span>
+                                            <span>
+                                                <img src="assets/images/project/four.png" alt="Image">
+                                            </span>
+                                        </div>
+                                        <div class="hero-number-back">02</div>
+                                        <div class="hero-number">02</div>
+                                    </li>
+                                    <li>
+                                        <div class="img-hero-background">
+                                            <span>
+                                                <img src="assets/images/project/one.png" alt="Image">
+                                            </span>
+                                            <span>
+                                                <img src="assets/images/project/two.png" alt="Image">
+                                            </span>
+                                            <span>
+                                                <img src="assets/images/project/three.png" alt="Image">
+                                            </span>
+                                            <span>
+                                                <img src="assets/images/project/four.png" alt="Image">
+                                            </span>
+                                        </div>
+                                        <div class="hero-number-back">03</div>
+                                        <div class="hero-number">03</div>
+                                    </li>
+                                    <li>
+                                        <div class="img-hero-background">
+                                            <span>
+                                                <img src="assets/images/project/one.png" alt="Image">
+                                            </span>
+                                            <span>
+                                                <img src="assets/images/project/two.png" alt="Image">
+                                            </span>
+                                            <span>
+                                                <img src="assets/images/project/three.png" alt="Image">
+                                            </span>
+                                            <span>
+                                                <img src="assets/images/project/four.png" alt="Image">
+                                            </span>
+                                        </div>
+                                        <div class="hero-number-back">04</div>
+                                        <div class="hero-number">04</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <!-- ==== / project end ==== -->
+                        <!-- ==== counter start ==== -->
+                        <section class="counter pt-120 fade-wrapper">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="counter__inner border-0">
+                                            <div class="row justify-content-center">
+                                                <div class="col-12 col-xxl-11">
+                                                    <div class="row gaper">
+                                                        <div class="col-12 col-md-6 col-xxl-3">
+                                                            <div class="counter__single fade-top">
+                                                                <h2 class="title-xl">
+                                                                    <span class="odometer" data-odometer-final="2"></span>
+                                                                    <span> k+</span>
+                                                                </h2>
+                                                                <p class="title-sm text-quaternary">Project complete</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 col-xxl-3">
+                                                            <div class="counter__single fade-top">
+                                                                <h2 class="title-xl">
+                                                                    <span class="odometer" data-odometer-final="1.2"></span>
+                                                                    <span> k+</span>
+                                                                </h2>
+                                                                <p class="title-sm text-quaternary">happy customers</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 col-xxl-3">
+                                                            <div class="counter__single fade-top">
+                                                                <h2 class="title-xl">
+                                                                    <span class="odometer" data-odometer-final="8"></span>
+                                                                    <span> +</span>
+                                                                </h2>
+                                                                <p class="title-sm text-quaternary">years of experience</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12 col-md-6 col-xxl-3">
+                                                            <div class="counter__single fade-top">
+                                                                <h2 class="title-xl">
+                                                                    <span class="odometer" data-odometer-final="15"></span>
+                                                                    <span> +</span>
+                                                                </h2>
+                                                                <p class="title-sm text-quaternary">award achievement</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / counter end ==== -->
+                        <!-- ==== feedback section start ==== -->
+                        <section class="pt-120 pb-120 h-s-f fade-wrapper">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-xl-6">
+                                        <div class="section__header text-center fade-top">
+                                            <h2 class="title-xxl reveal-title">
+                                                Client's
+                                                <span class="fw-7">Feedback</span>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="h-s-f-inner">
+                                            <div class="h-s-f-single fade-top">
+                                                <h4>Rate Me</h4>
+                                                <img src="assets/images/testimonial/quote.png" alt="Image">
+                                                <div class="d-flex gr">
+                                                    <div class="review__icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <h4>
+                                                        4.7
+                                                        <span>/ 5</span>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                            <div class="h-s-f-single fade-top">
+                                                <p class="text-md fw-7">Need Single page site design</p>
+                                                <blockquote>
+                                                    <q>He is a good designer with UI/UX experience. He has compiled my landing page in a good looking way.</q>
+                                                </blockquote>
+                                                <div class="rti">
+                                                    <div class="review__icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p>
+                                                        <span>luwise</span>
+                                                        london, UK
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="h-s-f-single brt fade-top">
+                                                <p class="text-md fw-7">Need Single page site design</p>
+                                                <blockquote>
+                                                    <q>He is a good designer with UI/UX experience. He has compiled my landing page.</q>
+                                                </blockquote>
+                                                <div class="rti">
+                                                    <div class="review__icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p>
+                                                        <span>luwise</span>
+                                                        london, UK
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="h-s-f-single brt fade-top">
+                                                <p class="text-md fw-7">Need Single page site design</p>
+                                                <blockquote>
+                                                    <q>He is a good designer with UI/UX experience. He has compiled my landing page.</q>
+                                                </blockquote>
+                                                <div class="rti">
+                                                    <div class="review__icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p>
+                                                        <span>luwise</span>
+                                                        london, UK
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="h-s-f-single fade-top">
+                                                <p class="text-md fw-7">Need Single page site design</p>
+                                                <blockquote>
+                                                    <q>He is a good designer with UI/UX experience. He has compiled my landing page in a good looking way.</q>
+                                                </blockquote>
+                                                <div class="rti">
+                                                    <div class="review__icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p>
+                                                        <span>luwise</span>
+                                                        london, UK
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / feedback section end ==== -->
+                        <!-- ==== text slider start ==== -->
+                        <div class="text-slider-wrapper text-slide-alt">
+                            <div class="text-slider">
+                                <div class="text-slider__single">
+                                    <h2 class="light-title-xxl text-uppercase fw-7">
+                                        good things take time
+                                    </h2>
+                                    <span></span>
+                                </div>
+                                <div class="text-slider__single">
+                                    <h2 class="light-title-xxl text-uppercase fw-7">
+                                        good things take time
+                                    </h2>
+                                    <span></span>
+                                </div>
+                                <div class="text-slider__single">
+                                    <h2 class="light-title-xxl text-uppercase fw-7">
+                                        good things take time
+                                    </h2>
+                                    <span></span>
+                                </div>
+                                <div class="text-slider__single">
+                                    <h2 class="light-title-xxl text-uppercase fw-7">
+                                        good things take time
+                                    </h2>
+                                    <span></span>
+                                </div>
+                                <div class="text-slider__single">
+                                    <h2 class="light-title-xxl text-uppercase fw-7">
+                                        good things take time
+                                    </h2>
+                                    <span></span>
+                                </div>
+                                <div class="text-slider__single">
+                                    <h2 class="light-title-xxl text-uppercase fw-7">
+                                        good things take time
+                                    </h2>
+                                    <span></span>
+                                </div>
+                                <div class="text-slider__single">
+                                    <h2 class="light-title-xxl text-uppercase fw-7">
+                                        good things take time
+                                    </h2>
+                                    <span></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ==== / text slider end ==== -->
+                    </main>
+                    <!-- ==== footer start ==== -->
+                    <footer class="footer pt-120 footer--four">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="footer__intro d-flex align-items-center justify-content-center flex-column flex-sm-row justify-content-sm-between flex-wrap">
+                                        <h2 class="title-xl text-quaternary fw-4 title-anim">Let's Work Together</h2>
+                                        <h5 class="title-sm">SEND ME A MESSAGE</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <div class="footer__content text-center pt-120">
+                                        <h2 class="light-title-xl text-uppercase fw-5">
+                                            <a href="mailto:ddmguru@aol.com" class="animated-text">ddmguru@aol.com</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__copyright">
+                            <div class="container">
+                                <div class="row align-items-center gaper">
+                                    <div class="col-12">
+                                        <div class="footer__copyright-text text-center">
+                                            <p class="text-senary tertiary-text">
+                                                &copy;
+                                                <span id="copyYear"></span>
+                                                . All Rights Reserved
+                                                <a href="index.html" class="fw-6">DDmGurU</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="social justify-content-center justify-content-lg-end">
+                                            <a href="https://www.tiktok.com/@ddmguru?_t=ZM-8vsvfZGoRmg&_r=1" target="_blank">
+                                                <i class="fa-brands fa-tiktok"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/itz.ddm?igsh=MTNvbWU1MmVwazc4dg%3D%3D&utm_source=qr" target="_blank">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                            <a href="https://pin.it/48XDZGbu9" target="_blank">
+                                                <i class="fa-brands fa-pinterest"></i>
+                                            </a>
+                                            <a href="https://youtube.com/@ddmguru?si=gFcyQrU4ZfEhPZ0o" target="_blank">
+                                                <i class="fa-brands fa-youtube"></i>
+												</a>
+                                            <a href="https://www.facebook.com/share/18ZoJjaJT5/?mibextid=wwXIfr" target="_blank">
+                                                <i class="fa-brands fa-facebook"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- ==== / footer end ==== -->
+                </div>
+            </div>
+        </div>
+        <!-- ==== / page wrapper end ==== -->
+        <!-- ==== scroll to top start ==== -->
+        <button class="progress-wrap" aria-label="scroll indicator" title="go to top">
+            <span></span>
+            <svg
+                class="progress-circle svg-content"
+                width="100%"
+                height="100%"
+                viewBox="-1 -1 102 102"
+            >
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+            </svg>
+        </button>
+        <!-- ==== / scroll to top end ==== -->
+        <!-- ==== js dependencies ==== -->
+        <!-- jquery -->
+        <script src="assets/js/jquery-3.7.0.min.js"></script>
+        <!-- bootstrap five js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- nice select js -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!-- magnific popup js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- slick js -->
+        <script src="assets/js/slick.min.js"></script>
+        <!-- odometer js -->
+        <script src="assets/js/odometer.min.js"></script>
+        <!-- scroll smoother js -->
+        <script src="assets/js/ScrollSmoother.min.js"></script>
+        <!-- splittext js -->
+        <script src="assets/js/SplitText.min.js"></script>
+        <!-- scrollto js -->
+        <script src="assets/js/ScrollToPlugin.min.js"></script>
+        <!-- scrolltrigger js -->
+        <script src="assets/js/ScrollTrigger.min.js"></script>
+        <!-- gsap js -->
+        <script src="assets/js/gsap.min.js"></script>
+        <!-- chroma js -->
+        <script src="assets/js/chroma.min.js"></script>
+        <!-- viewport js -->
+        <script src="assets/js/viewport.jquery.js"></script>
+        <!-- typed js -->
+        <script src="assets/js/typed.umd.js"></script>
+        <!-- ==== / js dependencies end ==== -->
+        <!-- main js -->
+        <script src="assets/js/custom.js"></script>
+        <!-- theme switcher js -->
+        <script src="assets/js/theme-switcher.js"></script>
+    </body>
+</html>

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- required meta -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- #favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+        <!-- #title -->
+        <title>DDmGurU | d'Manifestor Portfolio</title>
+        <!-- #keywords -->
+        <meta name="keywords" content="personal, portfolio, html">
+        <!-- #description -->
+        <meta name="description" content="Personal Portfolio Html5 Template">
+        <!-- ==== css dependencies start ==== -->
+        <!-- bootstrap five css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- bootstrap icons css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+        <!-- material icons css -->
+        <link rel="stylesheet" href="assets/css/material-icons.css">
+        <!-- font awesome six css -->
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <!-- nice select css -->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!-- magnific popup css -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- slick css -->
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!-- odometer css -->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!-- ==== / css dependencies end ==== -->
+        <!-- main css -->
+        <link rel="stylesheet" href="assets/css/main.min.css">
+        <!-- theme toggle css -->
+        <link rel="stylesheet" href="assets/css/theme-toggle.css">
+        <script>
+            (function() {
+                try {
+                    var saved = localStorage.getItem("ddmguru_theme");
+                    var theme = saved || (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+                    document.documentElement.setAttribute("data-theme", theme);
+                } catch(e) {}
+            })();
+        </script>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <!-- ==== preloader start ==== -->
+        <div id="preloader">
+            <div id="loader"></div>
+        </div>
+        <!-- ==== / preloader end ==== -->
+        <!-- ==== mouse cursor drag start ==== -->
+        <div class="mouseCursor cursor-outer"></div>
+        <div class="mouseCursor cursor-inner">
+            <span>Drag</span>
+        </div>
+        <!-- ==== / mouse cursor drag end ==== -->
+        <!-- ==== page wrapper start ==== -->
+        <div class="my-app">
+            <!-- ==== header start ==== -->
+            <header class="header">
+                <div class="primary-navbar" data-background="assets/images/header-bg.png">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <nav class="navbar p-0">
+                                    <div class="navbar__logo">
+                                        <a href="index.html" aria-label="home page" title="logo">
+                                            <img src="assets/images/logo.png" alt="Image">
+                                        </a>
+                                    </div>
+                                    <div class="navbar__menu">
+                                        <ul class="navbar__list">
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Home</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="index.html">Creative Designer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-two.html">Web Developer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-three.html">Freelancer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-four.html">Digital Marketter</a>
+                                                    </li>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item nav-fade">
+                                                <a href="about-me.html">About Me</a>
+                                            </li>
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Services</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="services.html">Digital Solutions</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service-single.html">Category All</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Case Study</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="case-study.html">Exploratory</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="case-study-single.html">Innovations</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Blog</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="blog.html">Resources</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="blog-single.html">Product Strategy</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item nav-fade">
+                                                <a href="contact-me.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="navbar__options">
+                                                                                <button class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+                                            <span class="theme-toggle-icon">
+                                                <i class="bi bi-sun-fill sun-icon"></i>
+                                                <i class="bi bi-moon-stars-fill moon-icon"></i>
+                                            </span>
+                                        </button>
+<button class="open-mobile-info animated-bar d-none d-xl-flex" aria-label="toggle offset info" title="open offset info">
+                                            <span class="bar-line"></span>
+                                        </button>
+                                        <button class="open-mobile-menu animated-bar d-flex d-xl-none" aria-label="toggle mobile menu" title="open mobile menu">
+                                            <span class="bar-line"></span>
+                                        </button>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ==== mobile menu start ==== -->
+            <div class="mobile-menu d-block d-xl-none">
+                <nav class="mobile-menu__wrapper">
+                    <div class="mobile-menu__header nav-fade">
+                        <div class="mobile-menu__logo"></div>
+                        <button aria-label="close mobile menu" class="close-mobile-menu">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <div class="mobile-menu__list"></div>
+                    <div class="mobile-menu__social social nav-fade">
+                        <a
+                            href="https://www.facebook.com/"
+                            target="_blank"
+                            aria-label="share us on facebook"
+                            title="facebook"
+                            class="fb"
+                        >
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a
+                            href="https://www.twitter.com/"
+                            target="_blank"
+                            aria-label="share us on twitter"
+                            title="twitter"
+                            class="tw"
+                        >
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a
+                            href="https://www.youtube.com/"
+                            class="yt"
+                            target="_blank"
+                            aria-label="share us on youtube"
+                            title="youtube"
+                        >
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/"
+                            target="_blank"
+                            aria-label="share us on instagram"
+                            title="instagram"
+                            class="in"
+                        >
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="mobile-menu__backdrop"></div>
+            <!-- ==== / mobile menu end ==== -->
+            <!-- ==== offset info start ==== -->
+            <div class="menu">
+                <button aria-label="close off canvas" class="off-canvas-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="menu-inner">
+                    <div class="gallery">
+                        <div class="title menu-nav-link">
+                            <h2 class="title-xl text-uppercase fw-7">Our Featured Projects</h2>
+                        </div>
+                        <div class="images">
+                            <a class="image-link" href="case-study-single.html">
+                                <div class="image" data-label="Development">
+                                    <img src="assets/images/project/one.png" alt="Image">
+                                </div>
+                            </a>
+                            <a class="image-link" href="case-study-single.html">
+                                <div class="image" data-label="Design">
+                                    <img src="assets/images/project/two.png" alt="Image">
+                                </div>
+                            </a>
+                            <a class="image-link" href="case-study-single.html">
+                                <div class="image" data-label="Marketting">
+                                    <img src="assets/images/project/three.png" alt="Image">
+                                </div>
+                            </a>
+                            <a class="image-link" href="case-study-single.html">
+                                <div class="image" data-label="Launch">
+                                    <img src="assets/images/project/four.png" alt="Image">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ==== offset info end ==== -->
+            <!-- ==== / header end ==== -->
+            <div id="smooth-wrapper">
+                <div id="smooth-content">
+                    <main>
+                        <!-- ==== banner start ==== -->
+                        <section class="pb-120 cmn-banner">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="cmn-banner__content">
+                                            <h2 class="title-xl fw-7 title-anim">Brand Identity Development</h2>
+                                            <nav aria-label="breadcrumb">
+                                                <ol class="breadcrumb justify-content-center">
+                                                    <li class="breadcrumb-item">
+                                                        <a href="index.html">Home</a>
+                                                    </li>
+                                                    <li class="breadcrumb-item active" aria-current="page">
+                                                        Blog Single
+                                                    </li>
+                                                    <li class="breadcrumb-item active" aria-current="page">
+                                                        Brand Identity Development
+                                                    </li>
+                                                </ol>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / banner end ==== -->
+                        <!-- ==== blog details start ==== -->
+                        <section class="blog-main blog-details fade-wrapper">
+                            <div class="container">
+                                <div class="row gaper">
+                                    <div class="col-12 col-xl-8">
+                                        <div class="blog-details__content">
+                                            <div class="bd-thumb fade-top">
+                                                <img src="assets/images/news/poster.png" alt="Image">
+                                            </div>
+                                            <div class="bd-content">
+                                                <div class="bd-meta">
+                                                    <div class="meta__left">
+                                                        <p>
+                                                            <strong>Written by :</strong>
+                                                            Marry biden
+                                                        </p>
+                                                        <span></span>
+                                                        <p>10/01/2023</p>
+                                                    </div>
+                                                </div>
+                                                <div class="bd-content-info">
+                                                    <h4 class="h4">
+                                                        Guide dog shortage: The blind people who train their
+                                                    </h4>
+                                                    <div class="paragraph">
+                                                        <p>
+                                                            Proin ultricies ultricies est vitae cursus. Nulla sit
+                                            amet suscipit tortor. Maecenas dui erat, ornare eget
+                                            tristique vitae, rutrum pretium justo. Phasellus vitae
+                                            consequat nisi, quis luctus nisl. Praesent faucibus sem
+                                            id massa semper ornare. Nam eu magna at mi pellentesque
+                                            mattis. Morbi at condimentum velit. Phasellus aliquet,
+                                            leo auctor volutpat ultrices, metus dolor dictum enim,
+                                            sed convallis lacus urna nec erat.
+                                                        </p>
+                                                        <p>
+                                                            consectetur adipiscing elit. Etiam at mauris accumsan mi
+                                            pulvinar lacinia a in justo. Ut tempor et libero quis
+                                            dignissim. Nulla at convallis libero, vitae aliquam leo.
+                                            Etiam ut augue nibh. In laoreet neque quis ex ornare,
+                                            quis auctor elit facilisis. Mauris dapibus massa rhoncus
+                                            ligula luctus vulputate. Fusce condimentum placerat
+                                            vulputate. Praesent ullamcorper dui in dui sagittis
+                                            commodo.
+                                                        </p>
+                                                    </div>
+                                                    <h4 class="h4">Where can I get some?</h4>
+                                                </div>
+                                            </div>
+                                            <div class="bd-group">
+                                                <img src="assets/images/news/group-one.png" alt="Image" class="fade-top">
+                                                <img src="assets/images/news/group-two.png" alt="Image" class="fade-top">
+                                            </div>
+                                            <div class="bd-content ">
+                                                <div class="bd-content__alt">
+                                                    <p>
+                                                        Proin ultricies ultricies est vitae cursus. Nulla sit amet
+                                         suscipit tortor. Maecenas dui erat, ornare eget tristique
+                                         vitae, rutrum pretium justo. Phasellus vitae consequat
+                                         nisi, quis luctus nisl. Praesent faucibus sem id massa
+                                         semper ornare. Nam eu magna at mi pellentesque mattis.
+                                         Morbi at condimentum velit. Phasellus aliquet, leo auctor
+                                         volutpat ultrices, metus dolor dictum enim, sed convallis
+                                         lacus urna nec erat.
+                                                    </p>
+                                                    <ul>
+                                                        <li>Mauris maximus diam ac imperdiet dictum.</li>
+                                                        <li>
+                                                            Maecenas eget ipsum dapibus, rutrum mi non, ultricies
+                                            massa.
+                                                        </li>
+                                                        <li>Nam non purus porta risus tincidunt cursus.</li>
+                                                        <li>
+                                                            Quisque blandit lacus vel urna pellentesque mattis.
+                                                        </li>
+                                                        <li>Maecenas vehicula tortor et consectetur faucibus.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="bd-quote">
+                                                <blockquote>
+                                                    <q class="text-xl">
+                                                        Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                                      amet, consectetur, adipisci velit...
+                                                    </q
+                                         >
+                                                </blockquote>
+                                            </div>
+                                            <div class="bd-content">
+                                                <div class="bd-content__alt mt-0">
+                                                    <p>
+                                                        Proin ultricies ultricies est vitae cursus. Nulla sit amet
+                                         suscipit tortor. Maecenas dui erat, ornare eget tristique
+                                         vitae, rutrum pretium justo. Phasellus vitae consequat
+                                         nisi, quis luctus nisl. Praesent faucibus sem id massa
+                                         semper ornare. Nam eu magna at mi pellentesque mattis.
+                                         Morbi at condimentum velit. Phasellus aliquet, leo auctor
+                                         volutpat ultrices, metus dolor dictum enim, sed convallis
+                                         lacus urna nec erat.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="bd-tags">
+                                                <div class="tags-left">
+                                                    <p>Tags:</p>
+                                                    <div class="tags-content">
+                                                        <a href="blog.html">Nature</a>
+                                                        <a href="blog.html">Health</a>
+                                                    </div>
+                                                </div>
+                                                <div class="tags-right">
+                                                    <p>Share:</p>
+                                                    <ul class="social">
+                                                        <li>
+                                                            <a href="index.html" aria-label="social media">
+                                                                <i class="fa-brands fa-facebook-f"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="index.html" aria-label="social media">
+                                                                <i class="fa-brands fa-twitter"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="index.html" aria-label="social media">
+                                                                <i class="fa-brands fa-youtube"></i>
+                                                            </a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="index.html" aria-label="social media">
+                                                                <i class="fa-brands fa-instagram"></i>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="blog-details__pagination">
+                                            <div class="row gaper">
+                                                <div class="col-md-6">
+                                                    <div class="single">
+                                                        <a href="blog.html">
+                                                            <i class="fa-solid fa-arrow-left-long"></i>
+                                                            Previous Blog
+                                                        </a>
+                                                        <div class="latest-single">
+                                                            <div class="latest-thumb">
+                                                                <a href="blog-single.html">
+                                                                    <img src="assets/images/news/eleven.png" alt="Image">
+                                                                </a>
+                                                            </div>
+                                                            <div class="latest-content">
+                                                                <p>10/01/2023</p>
+                                                                <p>
+                                                                    <a href="blog-single.html">
+                                                                        Guide dog shortage: The blind peo ple who train
+                                                  their own guide
+                                                                    </a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="single single--alt">
+                                                        <a href="blog.html">
+                                                            Next Blog
+                                                            <i class="fa-solid fa-arrow-right-long"></i>
+                                                        </a>
+                                                        <div class="latest-single">
+                                                            <div class="latest-thumb">
+                                                                <a href="blog-single.html">
+                                                                    <img src="assets/images/news/ten.png" alt="Image">
+                                                                </a>
+                                                            </div>
+                                                            <div class="latest-content">
+                                                                <p>10/01/2023</p>
+                                                                <p>
+                                                                    <a href="blog-single.html">
+                                                                        Guide dog shortage: The blind peo ple who train
+                                                  their own guide
+                                                                    </a>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="pt-120 pb-0 comment-form fade-top">
+                                                <div class="section__header">
+                                                    <h2 class="text-start">Leave a comment</h2>
+                                                </div>
+                                                <form action="#" method="post">
+                                                    <div class="form-group-wrapper">
+                                                        <div class="form-group-single">
+                                                            <input
+                                                                type="text"
+                                                                name="comment-name"
+                                                                id="commentName"
+                                                                placeholder="Name"
+                                                            >
+                                                        </div>
+                                                        <div class="form-group-single">
+                                                            <input
+                                                                type="email"
+                                                                name="comment-email"
+                                                                id="commentemail"
+                                                                placeholder="Email"
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group-single">
+                                                        <textarea name="comment-message" id="commentMessage" placeholder="Write Comment..."></textarea>
+                                                    </div>
+                                                    <div class="cta__group">
+                                                        <button type="submit" class="btn btn--ocotonary">
+                                                            post comment
+                                                            <i class="fa-solid fa-arrow-right-long"></i>
+                                                        </button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-xl-4">
+                                        <div class="blog-main__sidebar">
+                                            <div class="widget  fade-top">
+                                                <div class="widget__head">
+                                                    <h5 class="h5">Search</h5>
+                                                </div>
+                                                <div class="widget-search">
+                                                    <form action="#" method="post">
+                                                        <div class="form-group-input">
+                                                            <input
+                                                                type="search"
+                                                                name="blog-search"
+                                                                id="blogSearch"
+                                                                placeholder="Search here. . ."
+                                                            >
+                                                            <button type="submit">
+                                                                <i class="fa-solid fa-magnifying-glass"></i>
+                                                            </button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="widget  fade-top">
+                                                <div class="widget__head">
+                                                    <h5 class="h5">Categories</h5>
+                                                </div>
+                                                <div class="widget__list">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="blog.html">Business</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">Job Market</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">Marketing</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">News</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">Social Media</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">Trends</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">Writing</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="widget fade-top">
+                                                <div class="widget__head">
+                                                    <h5 class="h5">Recent Posts</h5>
+                                                </div>
+                                                <div class="widget__latest">
+                                                    <div class="latest-single ">
+                                                        <div class="latest-thumb">
+                                                            <a href="blog-single.html">
+                                                                <img src="assets/images/news/ten.png" alt="Image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="latest-content">
+                                                            <p>10/01/2023</p>
+                                                            <p>
+                                                                <a href="blog-single.html">
+                                                                    Guide dog shortage: The blind peo ple who train
+                                               their own guide
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="latest-single ">
+                                                        <div class="latest-thumb">
+                                                            <a href="blog-single.html">
+                                                                <img src="assets/images/news/eleven.png" alt="Image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="latest-content">
+                                                            <p>10/01/2023</p>
+                                                            <p>
+                                                                <a href="blog-single.html">
+                                                                    Guide dog shortage: The blind peo ple who train
+                                               their own guide
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="latest-single ">
+                                                        <div class="latest-thumb">
+                                                            <a href="blog-single.html">
+                                                                <img src="assets/images/news/twelve.png" alt="Image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="latest-content">
+                                                            <p>10/01/2023</p>
+                                                            <p>
+                                                                <a href="blog-single.html">
+                                                                    Guide dog shortage: The blind peo ple who train
+                                               their own guide
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="latest-single ">
+                                                        <div class="latest-thumb">
+                                                            <a href="blog-single.html">
+                                                                <img src="assets/images/news/thirteen.png" alt="Image">
+                                                            </a>
+                                                        </div>
+                                                        <div class="latest-content">
+                                                            <p>10/01/2023</p>
+                                                            <p>
+                                                                <a href="blog-single.html">
+                                                                    Guide dog shortage: The blind peo ple who train
+                                               their own guide
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget fade-top">
+                                                <div class="widget__head">
+                                                    <h5 class="h5">Tags</h5>
+                                                </div>
+                                                <div class="widget__tags">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="blog.html">nature</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">health</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">galaxy</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">creative</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">art</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">business</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">space</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">biology</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="blog.html">environemnt</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / blog details end ==== -->
+                    </main>
+                    <!-- ==== footer start ==== -->
+                    <footer class="footer pt-120">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="footer__intro d-flex align-items-center justify-content-center flex-column flex-sm-row justify-content-sm-between flex-wrap">
+                                        <h2 class="title-xl text-quaternary fw-4 title-anim">Let's Work Together</h2>
+                                        <h5 class="title-sm">SEND ME A MESSAGE</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <div class="footer__content text-center pt-120 pb-120">
+                                        <h2 class="light-title-xl text-uppercase fw-5">
+                                            <a href="mailto:ddmguru@aol.com" class="animated-text">ddmguru@aol.com</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__copyright" data-background="assets/images/footer-bg.png">
+                            <div class="container">
+                                <div class="row align-items-center gaper">
+                                    <div class="col-12 col-lg-8">
+                                        <div class="footer__copyright-text text-center text-lg-start">
+                                            <p class="text-senary tertiary-text">
+                                                &copy;
+                                                <span id="copyYear"></span>
+                                                . All Rights Reserved
+                                                <a href="index.html" class="fw-6">DDmGurU</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <div class="social justify-content-center justify-content-lg-end">
+                                            <a href="https://www.tiktok.com/@ddmguru?_t=ZM-8vsvfZGoRmg&_r=1" target="_blank">
+                                                <i class="fa-brands fa-tiktok"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/itz.ddm?igsh=MTNvbWU1MmVwazc4dg%3D%3D&utm_source=qr" target="_blank">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                            <a href="https://pin.it/48XDZGbu9" target="_blank">
+                                                <i class="fa-brands fa-pinterest"></i>
+                                            </a>
+                                            <a href="https://youtube.com/@ddmguru?si=gFcyQrU4ZfEhPZ0o" target="_blank">
+                                                <i class="fa-brands fa-youtube"></i>
+												</a>
+                                            <a href="https://www.facebook.com/share/18ZoJjaJT5/?mibextid=wwXIfr" target="_blank">
+                                                <i class="fa-brands fa-facebook"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- ==== / footer end ==== -->
+                </div>
+            </div>
+        </div>
+        <!-- ==== / page wrapper end ==== -->
+        <!-- ==== scroll to top start ==== -->
+        <button class="progress-wrap" aria-label="scroll indicator" title="go to top">
+            <span></span>
+            <svg
+                class="progress-circle svg-content"
+                width="100%"
+                height="100%"
+                viewBox="-1 -1 102 102"
+            >
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+            </svg>
+        </button>
+        <!-- ==== / scroll to top end ==== -->
+        <!-- ==== js dependencies ==== -->
+        <!-- jquery -->
+        <script src="assets/js/jquery-3.7.0.min.js"></script>
+        <!-- bootstrap five js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- nice select js -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!-- magnific popup js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- slick js -->
+        <script src="assets/js/slick.min.js"></script>
+        <!-- odometer js -->
+        <script src="assets/js/odometer.min.js"></script>
+        <!-- scroll smoother js -->
+        <script src="assets/js/ScrollSmoother.min.js"></script>
+        <!-- splittext js -->
+        <script src="assets/js/SplitText.min.js"></script>
+        <!-- scrollto js -->
+        <script src="assets/js/ScrollToPlugin.min.js"></script>
+        <!-- scrolltrigger js -->
+        <script src="assets/js/ScrollTrigger.min.js"></script>
+        <!-- gsap js -->
+        <script src="assets/js/gsap.min.js"></script>
+        <!-- chroma js -->
+        <script src="assets/js/chroma.min.js"></script>
+        <!-- viewport js -->
+        <script src="assets/js/viewport.jquery.js"></script>
+        <!-- typed js -->
+        <script src="assets/js/typed.umd.js"></script>
+        <!-- ==== / js dependencies end ==== -->
+        <!-- main js -->
+        <script src="assets/js/custom.js"></script>
+        <!-- theme switcher js -->
+        <script src="assets/js/theme-switcher.js"></script>
+    </body>
+</html>

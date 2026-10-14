@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- required meta -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- #favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+        <!-- #title -->
+        <title>DDmGurU | d'Manifestor Portfolio</title>
+        <!-- #keywords -->
+        <meta name="keywords" content="d'Manifestor, portfolio">
+        <!-- #description -->
+        <meta name="description" content="d'Manifestor Portfolio">
+        <meta property="og:title" content="DDmGurU | d'Manifestor Portfolio">
+        <meta property="og:description" content="d'Manifestor Portfolio">
+        <!-- ==== css dependencies start ==== -->
+        <!-- bootstrap five css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- bootstrap icons css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+        <!-- material icons css -->
+        <link rel="stylesheet" href="assets/css/material-icons.css">
+        <!-- font awesome six css -->
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <!-- nice select css -->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!-- magnific popup css -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- slick css -->
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!-- odometer css -->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!-- ==== / css dependencies end ==== -->
+        <!-- main css -->
+        <link rel="stylesheet" href="assets/css/main.min.css">
+        <!-- theme toggle css -->
+        <link rel="stylesheet" href="assets/css/theme-toggle.css">
+        <script>
+            (function() {
+                try {
+                    var saved = localStorage.getItem("ddmguru_theme");
+                    var theme = saved || (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+                    document.documentElement.setAttribute("data-theme", theme);
+                } catch(e) {}
+            })();
+        </script>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <!-- ==== preloader start ==== -->
+        <div id="preloader">
+            <div id="loader"></div>
+        </div>
+        <!-- ==== / preloader end ==== -->
+        <!-- ==== mouse cursor drag start ==== -->
+        <div class="mouseCursor cursor-outer"></div>
+        <div class="mouseCursor cursor-inner">
+            <span>Drag</span>
+        </div>
+        <!-- ==== / mouse cursor drag end ==== -->
+        <!-- ==== page wrapper start ==== -->
+        <div class="my-app">
+            <!-- ==== header start ==== -->
+            <header class="header">
+                <div class="primary-navbar" data-background="assets/images/header-bg.png">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <nav class="navbar p-0">
+                                    <div class="navbar__logo">
+                                        <a href="index.html" aria-label="home page" title="logo">
+                                            <img src="assets/images/logo.png" alt="Image">
+                                        </a>
+                                    </div>
+                                    <div class="navbar__menu">
+                                        <ul class="navbar__list">
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Home</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="index.html">Creative Designer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-two.html">Web Developer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-three.html">Freelancer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-four.html">Digital Marketter</a>
+                                                    </li>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item nav-fade">
+                                                <a href="about-me.html">About Me</a>
+                                            </li>
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Services</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="services.html">Digital Solutions</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service-single.html">Category All</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Case Study</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="case-study.html">Exploratory</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="case-study-single.html">Innovations</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Blog</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="blog.html">Resources</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="blog-single.html">Product Strategy</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item nav-fade">
+                                                <a href="contact-me.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="navbar__options">
+                                                                                <button class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+                                            <span class="theme-toggle-icon">
+                                                <i class="bi bi-sun-fill sun-icon"></i>
+                                                <i class="bi bi-moon-stars-fill moon-icon"></i>
+                                            </span>
+                                        </button>
+<button class="open-mobile-info animated-bar d-none d-xl-flex" aria-label="toggle offset info" title="open offset info">
+                                            <span class="bar-line"></span>
+                                        </button>
+                                        <button class="open-mobile-menu animated-bar d-flex d-xl-none" aria-label="toggle mobile menu" title="open mobile menu">
+                                            <span class="bar-line"></span>
+                                        </button>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ==== mobile menu start ==== -->
+            <div class="mobile-menu d-block d-xl-none">
+                <nav class="mobile-menu__wrapper">
+                    <div class="mobile-menu__header nav-fade">
+                        <div class="mobile-menu__logo"></div>
+                        <button aria-label="close mobile menu" class="close-mobile-menu">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <div class="mobile-menu__list"></div>
+                    <div class="mobile-menu__social social nav-fade">
+                        <a
+                            href="https://www.facebook.com/share/18ZoJjaJT5/"
+                            target="_blank"
+                            aria-label="share us on facebook"
+                            title="facebook"
+                            class="fb"
+                        >
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a
+                            href="https://www.tiktok.com/@ddmguru"
+                            target="_blank"
+                            aria-label="share us on tiktok"
+                            title="tiktok"
+                            class="tt"
+                        >
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a
+                            href="https://youtube.com/@ddmguru"
+                            class="yt"
+                            target="_blank"
+                            aria-label="share us on youtube"
+                            title="youtube"
+                        >
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/itz.ddm/#"
+                            target="_blank"
+                            aria-label="share us on instagram"
+                            title="instagram"
+                            class="in"
+                        >
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="mobile-menu__backdrop"></div>
+            <!-- ==== / mobile menu end ==== -->
+            <!-- ==== offset info start ==== -->
+            <div class="menu">
+                <button aria-label="close off canvas" class="off-canvas-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="menu-inner">
+                    <div class="gallery">
+                        <div class="title menu-nav-link">
+                            <h2 class="title-xl text-uppercase fw-7">Our Featured Projects</h2>
+                        </div>
+                        <div class="images">
+                            <a class="image-link" href="case-study-single.html">
+                                <div class="image" data-label="Development">
+                                    <img src="assets/images/project/one.png" alt="Image">
+                                </div>
+                            </a>
+                            <a class="image-link" href="case-study-single.html">
+                                <div class="image" data-label="Design">
+                                    <img src="assets/images/project/two.png" alt="Image">
+                                </div>
+                            </a>
+                            <a class="image-link" href="case-study-single.html">
+                                <div class="image" data-label="Marketting">
+                                    <img src="assets/images/project/three.png" alt="Image">
+                                </div>
+                            </a>
+                            <a class="image-link" href="case-study-single.html">
+                                <div class="image" data-label="Launch">
+                                    <img src="assets/images/project/four.png" alt="Image">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ==== offset info end ==== -->
+            <!-- ==== / header end ==== -->
+            <div id="smooth-wrapper">
+                <div id="smooth-content">
+                    <main>
+                        <!-- ==== banner start ==== -->
+                        <section class="banner">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="banner__inner">
+                                            <div class="banner__meta">
+                                                <div class="banner__meta-single bg-grd-one">
+                                                    <div class="thumb">
+                                                        <img src="assets/images/banner/bn-one-thumb.png" alt="Image">
+                                                    </div>
+                                                    <div class="content">
+                                                        <p class="title-sm fw-7">
+                                                            <a href="about-me.html">Eedris A. Olu</a>
+                                                        </p>
+                                                        <p class="text-sm text-quaternary d-flex align-items-center fw-7">
+                                                            <i class="fa-solid fa-briefcase"></i>
+                                                            Creative Designer
+                                                        </p>
+                                                        <p class="text-sm text-quaternary d-flex align-items-center fw-7">
+                                                            <i class="fa-solid fa-location-dot"></i>
+                                                            Lives in Ibadan, NIGERIA
+                                                        </p>
+                                                    </div>
+                                                    <hr>
+                                                    <div class="social justify-content-start">
+                                                        <a href="https://behance.com/ddmguru" class="tw" target="_blank">
+                                                            <i class="fa-brands fa-behance"></i>
+                                                        </a>
+                                                        <a href="https://www.instagram.com/itz.ddm/" class="in" target="_blank">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                        </a>
+                                                        <a href="https://www.facebook.com/share/18ZoJjaJT5/" class="fb" target="_blank">
+                                                            <i class="fa-brands fa-facebook-messenger"></i>
+                                                        </a>
+                                                        <a href="https://www.tiktok.com/@ddmguru" class="yt" target="_blank">
+                                                            <i class="fa-brands fa-tiktok"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="banner__meta-btn">
+                                                    <a href="contact-me.html" class="fw-7 text-capitalize rt-btn">
+                                                        Hire Me
+                                                        <i class="fa-solid fa-circle-arrow-right"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="banner__meta-btn">
+                                                    <button aria-label="download my cv" class="fw-7 text-capitalize rt-btn" id="downloadCv">
+                                                        Download Resume
+                                                        <i class="fa-solid fa-cloud-arrow-down"></i>
+                                                    </button>
+                                                </div>
+                                                <p class="text-senary tertiary-text">
+                                                    &copy;
+                                                    All Rights Reserved
+                                                    <a href="index.html" class="fw-6">DDmGurU</a>
+                                                </p>
+                                            </div>
+                                            <div class="banner__content">
+                                                <div class="banner__content-single bg-grd-two">
+                                                    <h2 class="title-xxl  fw-5 title-anim">
+                                                        Hi It'z DDM,
+                                                        <br>
+                                                        <span data-before-image="assets/images/banner/shape.png">Creative</span>
+                                                        Designer
+                                                    </h2>
+                                                    <p>
+                                                        I’m a creative designer with a passion for visual storytelling and purposeful design. I specialize in crafting bold, effective brand identities and user experiences across digital and print. With a keen eye for detail and a collaborative mindset, I turn ideas into impactful visuals that connect and communicate.
+                                                    </p>
+                                                    <hr>
+                                                    <div class="cta">
+                                                        <div class="cta-single">
+                                                            <p class="d-flex align-items-center">
+                                                                <i class="fa-solid fa-check"></i>
+                                                                <span>7+</span>
+                                                            </p>
+                                                            <p class="text-uppercase text-quaternary text-sm">YEARS EXPERIENCE</p>
+                                                        </div>
+                                                        <div class="cta-single">
+                                                            <p class="d-flex align-items-center">
+                                                                <i class="fa-solid fa-check"></i>
+                                                                <span>103+</span>
+                                                            </p>
+                                                            <p class="text-uppercase text-quaternary text-sm">CLIENTS WORLD WIDE</p>
+                                                        </div>
+                                                        <div class="cta-single">
+                                                            <p class="d-flex align-items-center">
+                                                                <i class="fa-solid fa-check"></i>
+                                                                <span>350+</span>
+                                                            </p>
+                                                            <p class="text-uppercase text-quaternary text-sm">TOTAL PROJECTS</p>
+                                                        </div>
+                                                        <div class="cta-single">
+                                                            <a href="contact-me.html" class="fw-7 text-capitalize anim-btn">
+                                                                <span class="btn-anim"> Hire Me</span>
+                                                                <span class="btn-m">hire me</span>
+                                                                <i class="fa-solid fa-circle-arrow-right"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="banner__content-study pt-60 fade-wrapper">
+                                                    <div class="title-animation position-relative d-flex align-items-center justify-content-center">
+                                                        <div class="overflow-hidden position-relative">
+                                                            <h2 class="fw-5 text-white title-xl">Case</h2>
+                                                        </div>
+                                                        <div class="overflow-hidden position-relative">
+                                                            <h2 class="fw-5 text-quinary title-xl">Study</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="banner__content-study__inner">
+                                                        <div class="banner__content-study__single fade-top">
+                                                            <div class="tag">
+                                                                <a href="case-study-single.html"> Branding</a>
+                                                                <a href="case-study-single.html">
+                                                                    Client Review
+                                                                    <i class="bi bi-play"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="content d-flex align-items-center justify-content-between">
+                                                                <div class="content__left">
+                                                                    <h3 class="title-lg">
+                                                                        <a href="case-study-single.html">Top view idealight bulb draw</a>
+                                                                    </h3>
+                                                                </div>
+                                                                <div class="content__right">
+                                                                    <p class="text-sm text-capitalize">
+                                                                        <a href="case-study.html">design & animation</a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="case-study-hover d-none d-md-block" data-background="assets/images/case-study/hover-thumb.png"></div>
+                                                        </div>
+                                                        <div class="banner__content-study__single fade-top">
+                                                            <div class="tag">
+                                                                <a href="case-study-single.html">UI/UX Design</a>
+                                                                <a href="case-study-single.html">
+                                                                    Client Review
+                                                                    <i class="bi bi-play"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="content d-flex align-items-center justify-content-between">
+                                                                <div class="content__left">
+                                                                    <h3 class="title-lg">
+                                                                        <a href="case-study-single.html">The Wild Hunt web system</a>
+                                                                    </h3>
+                                                                </div>
+                                                                <div class="content__right">
+                                                                    <p class="text-sm text-capitalize">
+                                                                        <a href="case-study.html">design & animation</a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="case-study-hover d-none d-md-block" data-background="assets/images/case-study/two.png"></div>
+                                                        </div>
+                                                        <div class="banner__content-study__single fade-top">
+                                                            <div class="tag">
+                                                                <a href="case-study-single.html">Motion Graphics</a>
+                                                                <a href="case-study-single.html">
+                                                                    Client Review
+                                                                    <i class="bi bi-play"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="content d-flex align-items-center justify-content-between">
+                                                                <div class="content__left">
+                                                                    <h3 class="title-lg">
+                                                                        <a href="case-study-single.html">Netfly provides a user-friendly</a>
+                                                                    </h3>
+                                                                </div>
+                                                                <div class="content__right">
+                                                                    <p class="text-sm text-capitalize">
+                                                                        <a href="case-study.html">design & animation</a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="case-study-hover d-none d-md-block" data-background="assets/images/case-study/three.png"></div>
+                                                        </div>
+                                                        <div class="banner__content-study__single fade-top">
+                                                            <div class="tag">
+                                                                <a href="case-study-single.html">Web Design</a>
+                                                                <a href="case-study-single.html">
+                                                                    Client Review
+                                                                    <i class="bi bi-play"></i>
+                                                                </a>
+                                                            </div>
+                                                            <div class="content d-flex align-items-center justify-content-between">
+                                                                <div class="content__left">
+                                                                    <h3 class="title-lg">
+                                                                        <a href="case-study-single.html">marketplaces, view NFT collections</a>
+                                                                    </h3>
+                                                                </div>
+                                                                <div class="content__right">
+                                                                    <p class="text-sm text-capitalize">
+                                                                        <a href="case-study.html">design & animation</a>
+                                                                    </p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="case-study-hover d-none d-md-block" data-background="assets/images/case-study/thumb.png"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="banner__content-about pt-60 fade-wrapper">
+                                                    <div class="title-animation position-relative d-flex align-items-center justify-content-center">
+                                                        <div class="overflow-hidden position-relative">
+                                                            <h2 class="fw-5 text-white title-xl">About</h2>
+                                                        </div>
+                                                        <div class="overflow-hidden position-relative">
+                                                            <h2 class="fw-5 text-quinary title-xl">Me</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="banner__content-about-inner">
+                                                        <h3 class="title-xxl text-capitalize fw-4 title-anim">
+                                                             Hi It'z DDM,
+                                                            <span class="fw-7">Creative Designer</span>
+                                                            I
+                                                            work as the
+                                                            <span class="span-block">Creative Director</span>
+                                                            at
+                                                            Dynamic Digital Manifestor
+                                                            <span class="fw-7">
+                                                                in
+                                                                Ibadan
+                                                            </span>
+                                                            .
+                                                        </h3>
+                                                        <div class="bn-about-thumb fade-top">
+                                                            <img src="assets/images/banner/bn-blog.png" alt="Image">
+                                                            <a href="https://www.youtube.com/@ddmguru" class="yt" target="_blank">
+                                                                <i class="fa-brands fa-youtube"></i>
+                                                            </a>
+                                                        </div>
+                                                        <div class="bn-about__content fade-top">
+                                                            <div class="bn-about__content-left">
+                                                                <h3 class="title-lg">Awwwards.</h3>
+                                                            </div>
+                                                            <div class="bn-about__content-right">
+                                                                <ul>
+                                                                    <li>[24]7.ai: UX Design increases Rates by 164%</li>
+                                                                    <li>Sift: Data management realigned and redefined</li>
+                                                                    <li>AQuest Award-Winning Website Redesign 101%</li>
+                                                                    <li>Fantastic Website portfolio-IRCE (2020)</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="banner__history fade-wrapper">
+                                                    <h3 class="title-xl">History</h3>
+                                                    <div class="banner__history-single fade-top">
+                                                        <div class="lefter">
+                                                            <h2 class="title-lg">Now</h2>
+                                                        </div>
+                                                        <div class="righter">
+                                                            <h2 class="title-lg">Client list hits double digits.</h2>
+                                                            <p>Less than one year in and have already building up an impressive list of early innovators and web pioneers.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="banner__history-single fade-top">
+                                                        <div class="lefter">
+                                                            <h2 class="title-lg">2024</h2>
+                                                        </div>
+                                                        <div class="righter">
+                                                            <h2 class="title-lg"> Lead Designer, Freelance Studio</h2>
+                                                            <p>Designed a rebrand for a vegan skincare line, boosting sales by 35% within three months.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="banner__history-single fade-top">
+                                                        <div class="lefter">
+                                                            <h2 class="title-lg">2022–2023</h2>
+                                                        </div>
+                                                        <div class="righter">
+                                                            <h2 class="title-lg">UI/UX Designer, Pixel Forge Agency</h2>
+                                                            <p>Redesigned a fintech app interface, improving user retention by 25%.
+															Led design sprints and user testing sessions to inform prototype iterations.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="banner__history-single fade-top">
+                                                        <div class="lefter">
+                                                            <h2 class="title-lg">Notable Achievements</h2>
+                                                        </div>
+                                                        <div class="righter">
+                                                            <h2 class="title-lg">Work featured in Behance Best of the Month (2023)</h2>
+                                                            <p>Designed for campaigns that collectively reached over 1M users</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="banner__sidebar fade-wrapper">
+                                                <div class="banner__sidebar-single bg-grd-two">
+                                                    <h5 class="title-sm">My Specializations</h5>
+                                                    <div class="banner__sidebar-special fade-top">
+                                                        <a href="service-single.html">
+                                                            <span class="service-info">
+                                                                <span class="fw-5">Visual & Graphic Design</span>
+                                                                <span class="text-sm">24 Projects</span>
+                                                            </span>
+                                                            <span>
+                                                                <i class="bi bi-arrow-right-circle-fill"></i>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="banner__sidebar-special fade-top">
+                                                        <a href="service-single.html">
+                                                            <span class="service-info">
+                                                                <span class="fw-5">Motion & Multimedia</span>
+                                                                <span class="text-sm">16 Projects</span>
+                                                            </span>
+                                                            <span>
+                                                                <i class="bi bi-arrow-right-circle-fill"></i>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="banner__sidebar-special fade-top">
+                                                        <a href="service-single.html">
+                                                            <span class="service-info">
+                                                                <span class="fw-5">UX/UI Design</span>
+                                                                <span class="text-sm">45 Projects</span>
+                                                            </span>
+                                                            <span>
+                                                                <i class="bi bi-arrow-right-circle-fill"></i>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                    <div class="banner__sidebar-special fade-top">
+                                                        <a href="service-single.html">
+                                                            <span class="service-info">
+                                                                <span class="fw-5">Digital Marketing</span>
+                                                                <span class="text-sm">12 Projects</span>
+                                                            </span>
+                                                            <span>
+                                                                <i class="bi bi-arrow-right-circle-fill"></i>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="banner__sidebar-single bg-grd-two">
+                                                    <h5 class="title-sm">Education & Experience</h5>
+                                                    <div class="banner__sidebar-experience fade-top">
+                                                        <div class="time-frame">
+                                                            <span class="text-xs">2016–2019</span>
+                                                            <span class="text-xs">-</span>
+                                                            <span class="text-xs"> (B.A) in Graphic Design</span>
+                                                        </div>
+                                                        <p class="designation text-quaternary">Desinger & Developer</p>
+                                                        <p class="ins-name text-quaternary text-xs">University of Creative Arts</p>
+                                                    </div>
+                                                    <div class="banner__sidebar-experience fade-top">
+                                                        <div class="time-frame">
+                                                            <span class="text-xs">2023–2025</span>
+                                                            <span class="text-xs">-</span>
+                                                            <span class="text-xs">Creative Designer</span>
+                                                        </div>
+                                                        <p class="designation text-quaternary">(Freelance)</p>
+                                                        <p class="ins-name text-quaternary text-xs">Remote/Self-Employed</p>
+                                                    </div>
+                                                    <div class="banner__sidebar-experience fade-top">
+                                                        <div class="time-frame">
+                                                            <span class="text-xs">2021–2023</span>
+                                                            <span class="text-xs">-</span>
+                                                            <span class="text-xs">UI/UX Designer</span>
+                                                        </div>
+                                                        <p class="designation text-quaternary">Pixel Forge Agency</p>
+                                                        <p class="ins-name text-quaternary text-xs">Manchester, UK</p>
+                                                    </div>
+                                                    <div class="banner__sidebar-experience fade-top">
+                                                        <div class="time-frame">
+                                                            <span class="text-xs">2019–2021</span>
+                                                            <span class="text-xs">-</span>
+                                                            <span class="text-xs">Senior Marketing Manager</span>
+                                                        </div>
+                                                        <p class="designation text-quaternary">Leader Team of Marketing</p>
+                                                        <p class="ins-name text-quaternary text-xs">Brunodee Agency</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tag-t">
+                                <h2>DDmGurU</h2>
+                            </div>
+                        </section>
+                        <!-- ==== / banner end ==== -->
+                        <!-- ==== image view start ==== -->
+                        <div class="img-view pt-120">
+                            <div class="img-view__wrapper img-view__left">
+                                <div class="img-view__single">
+                                    <img src="assets/images/img-view/one.png" alt="Image">
+                                </div>
+                                <div class="img-view__single">
+                                    <img src="assets/images/img-view/two.png" alt="Image">
+                                </div>
+                                <div class="img-view__single">
+                                    <img src="assets/images/img-view/three.png" alt="Image">
+                                </div>
+                                <div class="img-view__single">
+                                    <img src="assets/images/img-view/four.png" alt="Image">
+                                </div>
+                                <div class="img-view__single">
+                                    <img src="assets/images/img-view/five.png" alt="Image">
+                                </div>
+                                <div class="img-view__single">
+                                    <img src="assets/images/img-view/six.png" alt="Image">
+                                </div>
+                                <div class="img-view__single">
+                                    <img src="assets/images/img-view/seven.png" alt="Image">
+                                </div>
+                            </div>
+                            <div class="img-view__wrapper img-view__right">
+                                <div class="img-view__single">
+                                    <img src="assets/images/img-view/one.png" alt="Image">
+                                </div>
+                                <div class="img-view__single">
+                                    <img src="assets/images/img-view/two.png" alt="Image">
+                                </div>
+                                <div class="img-view__single">
+                                    <img src="assets/images/img-view/three.png" alt="Image">
+                                </div>
+                                <div class="img-view__single">
+                                    <img src="assets/images/img-view/four.png" alt="Image">
+                                </div>
+                                <div class="img-view__single">
+                                    <img src="assets/images/img-view/five.png" alt="Image">
+                                </div>
+                                <div class="img-view__single">
+                                    <img src="assets/images/img-view/six.png" alt="Image">
+                                </div>
+                                <div class="img-view__single">
+                                    <img src="assets/images/img-view/seven.png" alt="Image">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ==== / image view end ==== -->
+                    </main>
+                    <!-- ==== footer start ==== -->
+                    <footer class="footer pt-120">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="footer__intro d-flex align-items-center justify-content-center flex-column flex-sm-row justify-content-sm-between flex-wrap">
+                                        <h2 class="title-xl text-quaternary fw-4 title-anim">Let's Work Together</h2>
+                                        <h5 class="title-sm">SEND ME A MESSAGE</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <div class="footer__content text-center pt-120 pb-120">
+                                        <h2 class="light-title-xl text-uppercase fw-5">
+                                            <a href="mailto:ddmguru@aol.com" class="animated-text">ddmguru@aol.com</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__copyright" data-background="assets/images/footer-bg.png">
+                            <div class="container">
+                                <div class="row align-items-center gaper">
+                                    <div class="col-12 col-lg-8">
+                                        <div class="footer__copyright-text text-center text-lg-start">
+                                            <p class="text-senary tertiary-text">
+                                                &copy;
+                                                <span id="copyYear"></span>
+                                                . All Rights Reserved
+                                                <a href="index.html" class="fw-6">DDmGurU</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <div class="social justify-content-center justify-content-lg-end">
+                                            <a href="https://www.tiktok.com/@ddmguru?_t=ZM-8vsvfZGoRmg&_r=1" target="_blank">
+                                                <i class="fa-brands fa-tiktok"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/itz.ddm?igsh=MTNvbWU1MmVwazc4dg%3D%3D&utm_source=qr" target="_blank">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                            <a href="https://pin.it/48XDZGbu9" target="_blank">
+                                                <i class="fa-brands fa-pinterest"></i>
+                                            </a>
+                                            <a href="https://youtube.com/@ddmguru?si=gFcyQrU4ZfEhPZ0o" target="_blank">
+                                                <i class="fa-brands fa-youtube"></i>
+												</a>
+                                            <a href="https://www.facebook.com/share/18ZoJjaJT5/?mibextid=wwXIfr" target="_blank">
+                                                <i class="fa-brands fa-facebook"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- ==== / footer end ==== -->
+                </div>
+            </div>
+        </div>
+        <!-- ==== / page wrapper end ==== -->
+        <!-- ==== scroll to top start ==== -->
+        <button class="progress-wrap" aria-label="scroll indicator" title="go to top">
+            <span></span>
+            <svg
+                class="progress-circle svg-content"
+                width="100%"
+                height="100%"
+                viewBox="-1 -1 102 102"
+            >
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+            </svg>
+        </button>
+        <!-- ==== / scroll to top end ==== -->
+        <!-- ==== js dependencies ==== -->
+        <!-- jquery -->
+        <script src="assets/js/jquery-3.7.0.min.js"></script>
+        <!-- bootstrap five js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- nice select js -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!-- magnific popup js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- slick js -->
+        <script src="assets/js/slick.min.js"></script>
+        <!-- odometer js -->
+        <script src="assets/js/odometer.min.js"></script>
+        <!-- scroll smoother js -->
+        <script src="assets/js/ScrollSmoother.min.js"></script>
+        <!-- splittext js -->
+        <script src="assets/js/SplitText.min.js"></script>
+        <!-- scrollto js -->
+        <script src="assets/js/ScrollToPlugin.min.js"></script>
+        <!-- scrolltrigger js -->
+        <script src="assets/js/ScrollTrigger.min.js"></script>
+        <!-- gsap js -->
+        <script src="assets/js/gsap.min.js"></script>
+        <!-- chroma js -->
+        <script src="assets/js/chroma.min.js"></script>
+        <!-- viewport js -->
+        <script src="assets/js/viewport.jquery.js"></script>
+        <!-- typed js -->
+        <script src="assets/js/typed.umd.js"></script>
+        <!-- ==== / js dependencies end ==== -->
+        <!-- main js -->
+        <script src="assets/js/custom.js"></script>
+        <!-- theme switcher js -->
+        <script src="assets/js/theme-switcher.js"></script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "ddmguru-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "d'Manifestor Portfolio",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'Static assets ready'"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

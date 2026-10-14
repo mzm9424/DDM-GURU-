@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- required meta -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- #favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+        <!-- #title -->
+        <title>DDmGurU | d'Manifestor Portfolio</title>
+        <!-- #keywords -->
+        <meta name="keywords" content="d'Manifestor, portfolio">
+        <!-- #description -->
+        <meta name="description" content="d'Manifestor Portfolio">
+        <!-- ==== css dependencies start ==== -->
+        <!-- bootstrap five css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- bootstrap icons css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+        <!-- material icons css -->
+        <link rel="stylesheet" href="assets/css/material-icons.css">
+        <!-- font awesome six css -->
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <!-- nice select css -->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!-- magnific popup css -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- slick css -->
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!-- odometer css -->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!-- ==== / css dependencies end ==== -->
+        <!-- main css -->
+        <link rel="stylesheet" href="assets/css/main.min.css">
+        <!-- theme toggle css -->
+        <link rel="stylesheet" href="assets/css/theme-toggle.css">
+        <script>
+            (function() {
+                try {
+                    var saved = localStorage.getItem("ddmguru_theme");
+                    var theme = saved || (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+                    document.documentElement.setAttribute("data-theme", theme);
+                } catch(e) {}
+            })();
+        </script>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <!-- ==== preloader start ==== -->
+        <div id="preloader">
+            <div id="loader"></div>
+        </div>
+        <!-- ==== / preloader end ==== -->
+        <!-- ==== mouse cursor drag start ==== -->
+        <div class="mouseCursor cursor-outer"></div>
+        <div class="mouseCursor cursor-inner">
+            <span>Drag</span>
+        </div>
+        <!-- ==== / mouse cursor drag end ==== -->
+        <!-- ==== page wrapper start ==== -->
+        <div class="my-app">
+            <!-- ==== header start ==== -->
+            <header class="header">
+                <div class="primary-navbar" data-background="assets/images/header-bg.png">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <nav class="navbar p-0">
+                                    <div class="navbar__logo">
+                                        <a href="index.html" aria-label="home page" title="logo">
+                                            <img src="assets/images/logo.png" alt="Image">
+                                        </a>
+                                    </div>
+                                    <div class="navbar__menu">
+                                        <ul class="navbar__list">
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Home</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="index.html">Creative Designer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-two.html">Web Developer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-three.html">Freelancer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-four.html">Digital Marketter</a>
+                                                    </li>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item nav-fade">
+                                                <a href="about-me.html">About Me</a>
+                                            </li>
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Services</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="services.html">Digital Solutions</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service-single.html">Category All</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Case Study</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="case-study.html">Exploratory</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="case-study-single.html">Innovations</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Blog</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="blog.html">Resources</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="blog-single.html">Product Strategy</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item nav-fade">
+                                                <a href="contact-me.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="navbar__options">
+                                                                                <button class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+                                            <span class="theme-toggle-icon">
+                                                <i class="bi bi-sun-fill sun-icon"></i>
+                                                <i class="bi bi-moon-stars-fill moon-icon"></i>
+                                            </span>
+                                        </button>
+<button class="open-mobile-info animated-bar d-none d-xl-flex" aria-label="toggle offset info" title="open offset info">
+                                            <span class="bar-line"></span>
+                                        </button>
+                                        <button class="open-mobile-menu animated-bar d-flex d-xl-none" aria-label="toggle mobile menu" title="open mobile menu">
+                                            <span class="bar-line"></span>
+                                        </button>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ==== mobile menu start ==== -->
+            <div class="mobile-menu d-block d-xl-none">
+                <nav class="mobile-menu__wrapper">
+                    <div class="mobile-menu__header nav-fade">
+                        <div class="mobile-menu__logo"></div>
+                        <button aria-label="close mobile menu" class="close-mobile-menu">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <div class="mobile-menu__list"></div>
+                    <div class="mobile-menu__social social nav-fade">
+                        <a
+                            href="https://www.facebook.com/share/18ZoJjaJT5/"
+                            target="_blank"
+                            aria-label="share us on facebook"
+                            title="facebook"
+                            class="fb"
+                        >
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a
+                            href="https://www.tiktok.com/@ddmguru"
+                            target="_blank"
+                            aria-label="share us on tiktok"
+                            title="tiktok"
+                            class="tw"
+                        >
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a
+                            href="https://youtube.com/@ddmguru"
+                            class="yt"
+                            target="_blank"
+                            aria-label="share us on youtube"
+                            title="youtube"
+                        >
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/itz.ddm/"
+                            target="_blank"
+                            aria-label="share us on instagram"
+                            title="instagram"
+                            class="in"
+                        >
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="mobile-menu__backdrop"></div>
+            <!-- ==== / mobile menu end ==== -->
+            <!-- ==== offset info start ==== -->
+            <div class="menu">
+                <button aria-label="close off canvas" class="off-canvas-close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+                <div class="menu-inner">
+                    <div class="gallery">
+                        <div class="title menu-nav-link">
+                            <h2 class="title-xl text-uppercase fw-7">Our Featured Projects</h2>
+                        </div>
+                        <div class="images">
+                            <a class="image-link" href="case-study-single.html">
+                                <div class="image" data-label="Development">
+                                    <img src="assets/images/project/one.png" alt="Image">
+                                </div>
+                            </a>
+                            <a class="image-link" href="case-study-single.html">
+                                <div class="image" data-label="Design">
+                                    <img src="assets/images/project/two.png" alt="Image">
+                                </div>
+                            </a>
+                            <a class="image-link" href="case-study-single.html">
+                                <div class="image" data-label="Marketting">
+                                    <img src="assets/images/project/three.png" alt="Image">
+                                </div>
+                            </a>
+                            <a class="image-link" href="case-study-single.html">
+                                <div class="image" data-label="Launch">
+                                    <img src="assets/images/project/four.png" alt="Image">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ==== offset info end ==== -->
+            <!-- ==== / header end ==== -->
+            <div id="smooth-wrapper">
+                <div id="smooth-content">
+                    <main>
+                        <!-- ==== banner start ==== -->
+                        <section class="pb-120 cmn-banner">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="cmn-banner__content">
+                                            <h2 class="title-xl fw-7 title-anim">About Me</h2>
+                                            <nav aria-label="breadcrumb">
+                                                <ol class="breadcrumb justify-content-center">
+                                                    <li class="breadcrumb-item">
+                                                        <a href="index.html">Home</a>
+                                                    </li>
+                                                    <li class="breadcrumb-item active" aria-current="page">
+                                                        About
+                                                    </li>
+                                                </ol>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / banner end ==== -->
+                        <!-- ==== about me start ==== -->
+                        <section class="about-me fade-wrapper">
+                            <div class="container">
+                                <div class="row gaper">
+                                    <div class="col-12 col-xxl-6">
+                                        <div class="banner-two__content fade-top">
+                                            <div class="banner-two__group">
+                                                <div class="banner-two__left">
+                                                    <h2 class="title-xl title-anim">
+                                                        I Bring Your Website With Vision To Life
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="banner-content__paragraph">
+                                                <p class="text-septenary">I blend visual design and web development to craft digital experiences that are both stunning and functional. From branding and UI/UX to responsive websites, I manage projects end-to-end — concept to code. For me, great design is about clarity, usability, and purpose. Let’s build something meaningful together.</p>
+                                            </div>
+                                            <hr>
+                                            <div class="banner-content__footer">
+                                                <ul>
+                                                    <li>
+                                                        <a href="https://maps.app.goo.gl/mbUGWrWrGjmhnJ9V8" target="_blank">
+                                                            <i class="fa-solid fa-location-dot"></i>
+                                                            Lives in Ibadan, NIGERIA
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="mailto:ddmguru@gmail.com">
+                                                            <i class="fa-regular fa-envelope"></i>
+                                                            ddmguru@gmail.com
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                                <button id="downloadCv">
+                                                    Download Resume
+                                                    <i class="fa-solid fa-download"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-xxl-3">
+                                        <div class="banner__meta fade-top">
+                                            <div class="banner__meta-single bg-grd-one">
+                                                <div class="thumb">
+                                                    <img src="assets/images/banner/bn-one-thumb1.png" alt="Image">
+                                                </div>
+                                                <div class="content">
+                                                    <h4 class="title-md ">
+                                                        Hi It'z DDM,
+                                                        <br>
+                                                        <span id="textTyped" class="text-quaternary text-capitalize"></span>
+                                                    </h4>
+                                                </div>
+                                                <div class="dert">
+                                                    <p class="text-quaternary text-md">Follow Me</p>
+                                                    <div class="social justify-content-start">
+                                                        <a href="https://www.twitter.com/" target="_blank">
+                                                            <i class="fa-brands fa-twitter"></i>
+                                                        </a>
+                                                        <a href="https://www.instagram.com/" target="_blank">
+                                                            <i class="fa-brands fa-instagram"></i>
+                                                        </a>
+                                                        <a href="https://www.facebook.com/" target="_blank">
+                                                            <i class="fa-brands fa-facebook-messenger"></i>
+                                                        </a>
+                                                        <a href="https://www.youtube.com/" target="_blank">
+                                                            <i class="fa-brands fa-youtube"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-xxl-3">
+                                        <div class="banner-two__sidebar fade-top">
+                                            <h4 class="title-md fw-7">My Special Skills</h4>
+                                            <div class="skill-wrap">
+                                                <div class="skill-bar-single">
+                                                    <div class="skill-bar-title">
+                                                        <p>Team Leadership</p>
+                                                        <span class="percent-value"></span>
+                                                    </div>
+                                                    <div class="skill-bar-wrapper" data-percent="100%">
+                                                        <div class="skill-bar">
+                                                            <div class="skill-bar-percent"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-bar-single">
+                                                    <div class="skill-bar-title">
+                                                        <p>Programming Languages</p>
+                                                        <span class="percent-value"></span>
+                                                    </div>
+                                                    <div class="skill-bar-wrapper" data-percent="90%">
+                                                        <div class="skill-bar">
+                                                            <div class="skill-bar-percent"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-bar-single">
+                                                    <div class="skill-bar-title">
+                                                        <p>Program Frameworks</p>
+                                                        <span class="percent-value"></span>
+                                                    </div>
+                                                    <div class="skill-bar-wrapper" data-percent="70%">
+                                                        <div class="skill-bar">
+                                                            <div class="skill-bar-percent"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-bar-single">
+                                                    <div class="skill-bar-title">
+                                                        <p>Problem Solving</p>
+                                                        <span class="percent-value"></span>
+                                                    </div>
+                                                    <div class="skill-bar-wrapper" data-percent="80%">
+                                                        <div class="skill-bar">
+                                                            <div class="skill-bar-percent"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-bar-single">
+                                                    <div class="skill-bar-title">
+                                                        <p>Communication Skills</p>
+                                                        <span class="percent-value"></span>
+                                                    </div>
+                                                    <div class="skill-bar-wrapper" data-percent="85%">
+                                                        <div class="skill-bar">
+                                                            <div class="skill-bar-percent"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / about me end ==== -->
+                        <!-- ==== experience start ==== -->
+                        <section class="pt-120 experience fade-wrapper">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12">
+                                        <div class="section__header text-center">
+                                            <h2 class="title-xl title-anim">Education And Experience</h2>
+                                            <p class="text-septenary text-center">Itzddm isn’t just a designer who codes or a developer who likes colors — they’re a creative technologist who believes that design and development should work together from the start. Every project is a chance to merge visual storytelling with digital functionality, resulting in work that not only looks great but also performs beautifully across devices.</p>
+                                            <div class="faq-two__switch">
+                                                <p class="abc cd">Experiences</p>
+                                                <div class="switcher">
+                                                    <input type="checkbox" id="switch">
+                                                    <label for="switch">Toggle</label>
+                                                </div>
+                                                <p class="atc">Education</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="faq-tab-content" id="faqOne">
+                                            <div class="row gaper">
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="experience__single fade-top">
+                                                        <span>2019 – Present</span>
+                                                        <h4 class="title-sm text-capitalize">Freelance Creative Designer & Web Developer</h4>
+                                                        <p class="text-capitalize text-quaternary">Remote & On-Site (Client-Based)</p>
+                                                        <p class="text-septenary">As a full-time freelancer, Itzddm has worked with startups, creators, and small businesses to bring ideas to life visually and functionally. Projects have ranged from logo and brand identity development to complete website design and coding. Whether designing a sleek landing page or building a custom WordPress site, Itzddm approaches every project with a focus on both aesthetics and usability.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="experience__single fade-top">
+                                                        <span>Summer - 2021</span>
+                                                        <h4 class="title-sm text-capitalize">UI/UX Designer Intern</h4>
+                                                        <p class="text-capitalize text-quaternary">VisionEdge Agency-Contract Role</p>
+                                                        <p class="text-septenary">Designed mobile app interfaces and interactive prototypes using Figma and Adobe XD. Participated in user research and usability testing. Contributed to design systems for client projects.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="experience__single fade-top">
+                                                        <span>2020 – 2021</span>
+                                                        <h4 class="title-sm text-capitalize">Web Design Assistant</h4>
+                                                        <p class="text-capitalize text-quaternary">StudioNext Digital</p>
+                                                        <p class="text-septenary">Assisted in designing and coding landing pages, portfolio sites, and eCommerce layouts. Integrated CMS platforms like WordPress and Webflow. Optimized designs for mobile and performance.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="experience__single fade-top">
+                                                        <span>2020 - 2023</span>
+                                                        <h4 class="title-sm text-capitalize">Product Designer</h4>
+                                                        <p class="text-capitalize text-quaternary">Creationic Inc.</p>
+                                                        <p class="text-septenary">Created wireframes, mockups, and logo concepts for early-stage startups. Participated in creative brainstorms, user feedback sessions, and rapid prototyping. Learned time management, client communication, and project lifecycle workflow.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="faq-tab-content" id="faqTwo">
+                                            <div class="row gaper">
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="experience__single fade-top">
+                                                        <span>2018 – 2022</span>
+                                                        <h4 class="title-sm text-capitalize">B.A. in Design & Media Arts</h4>
+                                                        <p class="text-capitalize text-quaternary">Creative Institute of Technology</p>
+                                                        <p class="text-septenary">Focused on visual communication, digital media, and interactive design. Gained a strong foundation in color theory, typography, UI/UX principles, and branding.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="experience__single fade-top">
+                                                        <span>2022</span>
+                                                        <h4 class="title-sm text-capitalize">Front-End Web Development Certification</h4>
+                                                        <p class="text-capitalize text-quaternary">CodeStack Academy</p>
+                                                        <p class="text-septenary">Specialized in HTML, CSS, JavaScript, and responsive design. Completed hands-on projects integrating design systems with modern development workflows.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="experience__single fade-top">
+                                                        <span>2023</span>
+                                                        <h4 class="title-sm text-capitalize">Advanced UI/UX Design Workshop</h4>
+                                                        <p class="text-capitalize text-quaternary">UXCamp Global (Online)</p>
+                                                        <p class="text-septenary">Participated in a hands-on workshop series focusing on UX research, usability testing, accessibility, and human-centered design. Prototyped and tested a mobile wellness app using user feedback loops and A/B testing.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="experience__single fade-top">
+                                                        <span>2023 - 2025</span>
+                                                        <h4 class="title-sm text-capitalize">Creative Designer (Freelance)</h4>
+                                                        <p class="text-capitalize text-quaternary">Remote / Self-Employed</p>
+                                                        <p class="text-septenary">Worked with clients across beauty, fashion, and tech sectors Delivered complete brand identity systems, websites, and marketing assets   Produced animated content and social media campaigns  Managed client relationships, timelines, and revisions independently</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / experience end ==== -->
+                        <!-- ==== awards section start ==== -->
+                        <section class="awards pt-120">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12">
+                                        <div class="section__header--secondary">
+                                            <div class="row align-items-center gaper">
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="section__header mb-0 text-center text-lg-start">
+                                                        <h2 class="title-xl title-anim">Awards Achievement</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="slide-dots awards-dots"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="awards__slider">
+                                            <div class="awards__slider-single">
+                                                <div class="bn-about-thumb">
+                                                    <img src="assets/images/aw-one.png" alt="Image">
+                                                    <a href="https://www.youtube.com/" class="yt" target="_blank">
+                                                        <i class="fa-brands fa-youtube"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="bn-about__content">
+                                                    <div class="bn-about__content-left">
+                                                        <h3 class="title-lg"> Awwwards – Honorable Mention</h3>
+                                                    </div>
+                                                    <div class="bn-about__content-right">
+                                                        <ul>
+                                                            <li>Year 2025: Recognized for outstanding design and usability on a portfolio website showcasing UI/UX work and interactive design. Judged on creativity, usability, and mobile performance</li>
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="awards__slider-single">
+                                                <div class="bn-about-thumb">
+                                                    <img src="assets/images/aw-two.png" alt="Image">
+                                                    <a href="https://www.youtube.com/" class="yt" target="_blank">
+                                                        <i class="fa-brands fa-youtube"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="bn-about__content">
+                                                    <div class="bn-about__content-left">
+                                                        <h3 class="title-lg"> CSS Design Awards – Best UI Design</h3>
+                                                    </div>
+                                                    <div class="bn-about__content-right">
+                                                        <ul>
+                                                            <li>Year 2024: Awarded for excellence in user interface design for a boutique fashion eCommerce site built using Webflow and custom CSS animations.</li>
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="awards__slider-single">
+                                                <div class="bn-about-thumb">
+                                                    <img src="assets/images/aw-one.png" alt="Image">
+                                                    <a href="https://www.youtube.com/" class="yt" target="_blank">
+                                                        <i class="fa-brands fa-youtube"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="bn-about__content">
+                                                    <div class="bn-about__content-left">
+                                                        <h3 class="title-lg">Behance Feature – Web Design Category</h3>
+                                                    </div>
+                                                    <div class="bn-about__content-right">
+                                                        <ul>
+                                                            <li>Year 2023: Project featured on Behance’s curated Web Design gallery for a case study combining branding, UI/UX, and front-end development.</li>
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="awards__slider-single">
+                                                <div class="bn-about-thumb">
+                                                    <img src="assets/images/aw-two.png" alt="Image">
+                                                    <a href="https://www.youtube.com/" class="yt" target="_blank">
+                                                        <i class="fa-brands fa-youtube"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="bn-about__content">
+                                                    <div class="bn-about__content-left">
+                                                        <h3 class="title-lg">Google UX Design Certificate – With Distinction</h3>
+                                                    </div>
+                                                    <div class="bn-about__content-right">
+                                                        <ul>
+                                                            <li>Year 2022: Completed the full Google UX Design Certification with top scores in user research, wireframing, and mobile-first design.</li>
+                                                            
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / awards section end ==== -->
+                        <!-- ==== feedback section start ==== -->
+                        <section class="pt-120 h-s-f fade-wrapper">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-xl-6">
+                                        <div class="section__header text-center fade-top">
+                                            <h2 class="title-xxl reveal-title">
+                                                Client's
+                                                <span class="fw-7">Feedback</span>
+                                            </h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="h-s-f-inner">
+                                            <div class="h-s-f-single fade-top">
+                                                <h4>Rate Me</h4>
+                                                <img src="assets/images/testimonial/quote.png" alt="Image">
+                                                <div class="d-flex gr">
+                                                    <div class="review__icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <h4>
+                                                        4.7
+                                                        <span>/ 5</span>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                            <div class="h-s-f-single fade-top">
+                                                <p class="text-md fw-7">Need Single page site design</p>
+                                                <blockquote>
+                                                    <q>"Working with Itzddm was a dream. They didn’t just design a beautiful brand for my skincare line — they brought it to life online with a sleek, mobile-friendly website. Their attention to detail, responsiveness, and creative direction exceeded every expectation. I constantly get compliments on the design!"</q>
+                                                </blockquote>
+                                                <div class="rti">
+                                                    <div class="review__icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p>
+                                                        <span> Sarah L.</span>
+                                                         Founder, Bloom Skincare Co.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="h-s-f-single brt fade-top">
+                                                <p class="text-md fw-7">Need Website Strategy & UX/UI Design</p>
+                                                <blockquote>
+                                                    <q>"Itzddm has that rare mix of creativity and technical skill. They redesigned our website’s UI/UX, then developed it flawlessly. Our bounce rate dropped, and engagement shot up. They were collaborative, fast, and truly understood what we needed — both visually and functionally."</q>
+                                                </blockquote>
+                                                <div class="rti">
+                                                    <div class="review__icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p>
+                                                        <span>Daniel K.</span>
+                                                         Marketing Director, TechNova Solutions
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="h-s-f-single brt fade-top">
+                                                <p class="text-md fw-7">Need CMS Development</p>
+                                                <blockquote>
+                                                    <q>"I needed a site that felt me — stylish, unique, and easy to update. Itzddm delivered a custom WordPress blog that’s beautiful and so easy to manage. They designed everything from scratch, gave me options, and made the entire process smooth. Highly recommend!"</q>
+                                                </blockquote>
+                                                <div class="rti">
+                                                    <div class="review__icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p>
+                                                        <span>Aisha R.</span>
+                                                         Lifestyle Blogger & Influencer
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="h-s-f-single fade-top">
+                                                <p class="text-md fw-7">For Visual Design / Motion & Interactive Design</p>
+                                                <blockquote>
+                                                    <q>"We hired Itzddm for Marketing materials (flyers, brochures, posters). Digital ads (Google, Facebook, Instagram, etc.), Social media graphics and templates, Animated logos, Short explainer animations (Lottie, GIFs, or video). Interactive mockups or prototypes (using Figma, InVision)."</q>
+                                                </blockquote>
+                                                <div class="rti">
+                                                    <div class="review__icons">
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                        <i class="fa-solid fa-star"></i>
+                                                    </div>
+                                                    <p>
+                                                        <span>Josh P.</span>
+                                                         Co-Founder, LevelUp Fitness Studio
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / feedback section end ==== -->
+                    </main>
+                    <!-- ==== footer start ==== -->
+                    <footer class="footer pt-120">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="footer__intro footer__intro-alt d-flex align-items-center justify-content-center flex-column flex-sm-row justify-content-sm-between flex-wrap">
+                                        <h2 class="title-xl text-quaternary fw-4 title-anim">Let's Work Together</h2>
+                                        <h5 class="title-sm">SEND ME A MESSAGE</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <div class="footer__content text-center pt-120 pb-120">
+                                        <h2 class="light-title-xl text-uppercase fw-5">
+                                            <a href="mailto:ddmguru@aol.com" class="animated-text">ddmguru@aol.com</a>
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__copyright" data-background="assets/images/footer-bg.png">
+                            <div class="container">
+                                <div class="row align-items-center gaper">
+                                    <div class="col-12 col-lg-8">
+                                        <div class="footer__copyright-text text-center text-lg-start">
+                                            <p class="text-senary tertiary-text">
+                                                &copy;
+                                                <span id="copyYear"></span>
+                                                . All Rights Reserved
+                                                <a href="index.html" class="fw-6">DDmGurU</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-4">
+                                        <div class="social justify-content-center justify-content-lg-end">
+                                            <a href="https://www.tiktok.com/@ddmguru?_t=ZM-8vsvfZGoRmg&_r=1" target="_blank">
+                                                <i class="fa-brands fa-tiktok"></i>
+                                            </a>
+                                            <a href="https://www.instagram.com/itz.ddm?igsh=MTNvbWU1MmVwazc4dg%3D%3D&utm_source=qr" target="_blank">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                            <a href="https://pin.it/48XDZGbu9" target="_blank">
+                                                <i class="fa-brands fa-pinterest"></i>
+                                            </a>
+                                            <a href="https://youtube.com/@ddmguru?si=gFcyQrU4ZfEhPZ0o" target="_blank">
+                                                <i class="fa-brands fa-youtube"></i>
+												</a>
+                                            <a href="https://www.facebook.com/share/18ZoJjaJT5/?mibextid=wwXIfr" target="_blank">
+                                                <i class="fa-brands fa-facebook"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- ==== / footer end ==== -->
+                </div>
+            </div>
+        </div>
+        <!-- ==== / page wrapper end ==== -->
+        <!-- ==== scroll to top start ==== -->
+        <button class="progress-wrap" aria-label="scroll indicator" title="go to top">
+            <span></span>
+            <svg
+                class="progress-circle svg-content"
+                width="100%"
+                height="100%"
+                viewBox="-1 -1 102 102"
+            >
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+            </svg>
+        </button>
+        <!-- ==== / scroll to top end ==== -->
+        <!-- ==== js dependencies ==== -->
+        <!-- jquery -->
+        <script src="assets/js/jquery-3.7.0.min.js"></script>
+        <!-- bootstrap five js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- nice select js -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!-- magnific popup js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- slick js -->
+        <script src="assets/js/slick.min.js"></script>
+        <!-- odometer js -->
+        <script src="assets/js/odometer.min.js"></script>
+        <!-- scroll smoother js -->
+        <script src="assets/js/ScrollSmoother.min.js"></script>
+        <!-- splittext js -->
+        <script src="assets/js/SplitText.min.js"></script>
+        <!-- scrollto js -->
+        <script src="assets/js/ScrollToPlugin.min.js"></script>
+        <!-- scrolltrigger js -->
+        <script src="assets/js/ScrollTrigger.min.js"></script>
+        <!-- gsap js -->
+        <script src="assets/js/gsap.min.js"></script>
+        <!-- chroma js -->
+        <script src="assets/js/chroma.min.js"></script>
+        <!-- viewport js -->
+        <script src="assets/js/viewport.jquery.js"></script>
+        <!-- typed js -->
+        <script src="assets/js/typed.umd.js"></script>
+        <!-- ==== / js dependencies end ==== -->
+        <!-- main js -->
+        <script src="assets/js/custom.js"></script>
+        <!-- theme switcher js -->
+        <script src="assets/js/theme-switcher.js"></script>
+    </body>
+</html>

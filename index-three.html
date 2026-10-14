@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- required meta -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- #favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+        <!-- #title -->
+        <title>DDmGurU | d'Manifestor Portfolio</title>
+        <!-- #keywords -->
+        <meta name="keywords" content="d'Manifestor, portfolio">
+        <!-- #description -->
+        <meta name="description" content="d'Manifestor Portfolio">
+        <!-- ==== css dependencies start ==== -->
+        <!-- bootstrap five css -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <!-- bootstrap icons css -->
+        <link rel="stylesheet" href="assets/css/bootstrap-icons.min.css">
+        <!-- material icons css -->
+        <link rel="stylesheet" href="assets/css/material-icons.css">
+        <!-- font awesome six css -->
+        <link rel="stylesheet" href="assets/css/all.min.css">
+        <!-- nice select css -->
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <!-- magnific popup css -->
+        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <!-- slick css -->
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!-- odometer css -->
+        <link rel="stylesheet" href="assets/css/odometer.css">
+        <!-- ==== / css dependencies end ==== -->
+        <!-- main css -->
+        <link rel="stylesheet" href="assets/css/main.min.css">
+        <!-- theme toggle css -->
+        <link rel="stylesheet" href="assets/css/theme-toggle.css">
+        <script>
+            (function() {
+                try {
+                    var saved = localStorage.getItem("ddmguru_theme");
+                    var theme = saved || (window.matchMedia && window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+                    document.documentElement.setAttribute("data-theme", theme);
+                } catch(e) {}
+            })();
+        </script>
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <!-- ==== preloader start ==== -->
+        <div id="preloader">
+            <div id="loader"></div>
+        </div>
+        <!-- ==== / preloader end ==== -->
+        <!-- ==== mouse cursor drag start ==== -->
+        <div class="mouseCursor cursor-outer"></div>
+        <div class="mouseCursor cursor-inner">
+            <span>Drag</span>
+        </div>
+        <!-- ==== / mouse cursor drag end ==== -->
+        <!-- ==== page wrapper start ==== -->
+        <div class="my-app">
+            <!-- ==== header start ==== -->
+            <header class="header">
+                <div class="primary-navbar">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <nav class="navbar p-0">
+                                    <div class="navbar__logo">
+                                        <a href="index.html" aria-label="home page" title="logo">
+                                            <img src="assets/images/logo-two.png" alt="Image">
+                                        </a>
+                                    </div>
+                                    <div class="navbar__menu ">
+                                        <ul class="navbar__list justify-content-start">
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Home</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="index.html">Creative Designer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-two.html">Web Developer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-three.html">Freelancer</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="index-four.html">Digital Marketter</a>
+                                                    </li>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item nav-fade">
+                                                <a href="about-me.html">About Me</a>
+                                            </li>
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Services</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="services.html">Digital Solutions</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="service-single.html">Category All</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Case Study</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="case-study.html">Exploratory</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="case-study-single.html">Innovations</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item navbar__item--has-children nav-fade">
+                                                <button aria-label="dropdown menu" class="navbar__dropdown-label">Blog</button>
+                                                <ul class="navbar__sub-menu">
+                                                    <li>
+                                                        <a href="blog.html">Resources</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="blog-single.html">Product Strategy</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="navbar__item nav-fade">
+                                                <a href="contact-me.html">Contact</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="navbar__options">
+                                                                                <button class="theme-toggle-btn" aria-label="Toggle theme" title="Toggle theme">
+                                            <span class="theme-toggle-icon">
+                                                <i class="bi bi-sun-fill sun-icon"></i>
+                                                <i class="bi bi-moon-stars-fill moon-icon"></i>
+                                            </span>
+                                        </button>
+<a href="contact-me.html" class="btn anim-btn btn--tertiary d-none d-sm-block">
+                                            <i class="fa-solid fa-paper-plane"></i>
+                                            <span class="btn-m">Hire Me</span>
+                                            <span class="btn-anim">Hire Me</span>
+                                        </a>
+                                        <button class="open-mobile-menu animated-bar d-flex d-xl-none" aria-label="toggle mobile menu" title="open mobile menu">
+                                            <span class="bar-line"></span>
+                                        </button>
+                                    </div>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ==== mobile menu start ==== -->
+            <div class="mobile-menu d-block d-xl-none">
+                <nav class="mobile-menu__wrapper">
+                    <div class="mobile-menu__header nav-fade">
+                        <div class="mobile-menu__logo"></div>
+                        <button aria-label="close mobile menu" class="close-mobile-menu">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <div class="mobile-menu__list"></div>
+                    <div class="mobile-menu__social social nav-fade">
+                        <a
+                            href="https://www.facebook.com/share/18ZoJjaJT5/"
+                            target="_blank"
+                            aria-label="share us on facebook"
+                            title="facebook"
+                            class="fb"
+                        >
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                        <a
+                            href="https://www.tiktok.com/@ddmguru"
+                            target="_blank"
+                            aria-label="share us on tiktok"
+                            title="tiktok"
+                            class="tt"
+                        >
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a
+                            href="https://youtube.com/@ddmguru"
+                            class="yt"
+                            target="_blank"
+                            aria-label="share us on youtube"
+                            title="youtube"
+                        >
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a
+                            href="https://www.instagram.com/itz.ddm/"
+                            target="_blank"
+                            aria-label="share us on instagram"
+                            title="instagram"
+                            class="in"
+                        >
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="mobile-menu__backdrop"></div>
+            <!-- ==== / mobile menu end ==== -->
+            <div id="smooth-wrapper">
+                <div id="smooth-content">
+                    <main>
+                        <!-- ==== banner start ==== -->
+                        <section class="banner-three fade-wrapper">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-xxl-10">
+                                        <div class="banner-three__meta">
+                                            <div class="banner-three__meta-left">
+                                                <div class="thumb">
+                                                    <a href="about-me.html">
+                                                        <img src="assets/images/avatar-two.png" alt="Image">
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <h4 class="title-md fw-7">
+                                                        <a href="about-me.html">Eedris A. Olu</a>
+                                                    </h4>
+                                                    <p>
+                                                        <a href="https://maps.app.goo.gl/eL4npB8GKrCjwhQbA" target="_blank">
+                                                            <i class="fa-solid fa-location-dot"></i>
+                                                             Lives in Ibadan, NIGERIA
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="banner-three__meta-right">
+                                                <div class="social">
+                                                    <a
+                                                        href="https://www.tiktok.com/@ddmguru"
+                                                        target="_blank"
+                                                        aria-label="share us on tiktok"
+                                                        title="tiktok"
+                                                    >
+                                                        <i class="fa-brands fa-tiktok"></i>
+                                                    </a>
+                                                    <a
+                                                        href="https://github.com/dmanifestor"
+                                                        target="_blank"
+                                                        aria-label="share us on github"
+                                                        title="github"
+                                                    >
+                                                        <i class="fa-brands fa-github"></i>
+                                                    </a>
+                                                    <a
+                                                        href="https://pin.it/6gRSGj1HY"
+                                                        target="_blank"
+                                                        aria-label="share us on pinterest"
+                                                        title="pinterest"
+                                                    >
+                                                        <i class="fa-solid fa-pinterest"></i>
+                                                    </a>
+                                                    <a
+                                                        href="https://www.instagram.com/itz.ddm/"
+                                                        target="_blank"
+                                                        aria-label="share us on instagram"
+                                                        title="instagram"
+                                                    >
+                                                        <i class="fa-brands fa-instagram"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="available-btn">
+                                                    <a href="contact-me.html" class="btn btn--tertiary anim-btn">
+                                                        <i class="fa-solid fa-bolt"></i>
+                                                        <span class="btn-m">Available now</span>
+                                                        <span class="btn-anim">Available now</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row gaper">
+                                    <div class="col-12 col-lg-3 col-xxl-2 offset-xxl-1">
+                                        <div class="banner-three__sidebar">
+                                            <div class="side-single fade-top">
+                                                <h6 class="title-xs">Hours per week</h6>
+                                                <p class="text-senary">
+                                                    <i class="fa-solid fa-clock"></i>
+                                                    40 hrs/
+                                                    <span>week</span>
+                                                </p>
+                                            </div>
+                                            <div class="side-single fade-top">
+                                                <h6>Languages Expert</h6>
+                                                <ul>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        English /
+                                                        <span>Fluent</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        Yoruba /
+                                                        <span>Basic</span>
+                                                    </li>
+                                                    <li>
+                                                        <i class="fa-solid fa-check"></i>
+                                                        French /
+                                                        <span>Medium</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="side-single fade-top">
+                                                <h6>Top Skills</h6>
+                                                <div class="tags">
+                                                    <a href="services.html">Mockup</a>
+                                                    <a href="services.html">Prototyping</a>
+                                                    <a href="services.html">Website Redesign</a>
+                                                    <a href="services.html">UX</a>
+                                                    <a href="services.html">Style Guide</a>
+                                                    <a href="services.html">User Flow</a>
+                                                </div>
+                                            </div>
+                                            <div class="side-single fade-top">
+                                                <h6>Education level</h6>
+                                                <div class="d-flex">
+                                                    <p>
+                                                        <i class="fa-solid fa-graduation-cap"></i>
+                                                    </p>
+                                                    <div>
+                                                        <p class="text-sm">Royal College of Art</p>
+                                                        <p class="text-xs">Associate of Arts (AA)</p>
+                                                        <p class="text-xs">2004-2008</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-9 col-xxl-8">
+                                        <div class="banner-three__review">
+                                            <div class="review-about fade-top">
+                                                <div class="review-about__left">
+                                                    <div class="intro d-flex flex-wrap align-items-center">
+                                                        <p class="text-white fw-7">More About me</p>
+                                                        <p class="text-xs text-senary">
+                                                            <span class="text-white">6+</span>
+                                                            years of experience
+                                                        </p>
+                                                    </div>
+                                                    <p class="text-sm text-senary">I’m a creative freelancer specializing in graphic design, web design, development, and marketing. With a passion for crafting visually striking designs, I create websites that are not only aesthetically appealing but also user-friendly and responsive. I blend technical expertise in web development with a keen eye for design to build seamless online experiences. Alongside this, I offer strategic marketing services, including SEO, social media campaigns, and content creation, helping brands reach and engage their target audience. Whether you need a new website or a comprehensive marketing strategy, I’m here to bring your vision to life and drive results.</p>
+                                                    <div class="signature">
+                                                        <img src="assets/images/signature.png" alt="Image">
+                                                    </div>
+                                                </div>
+                                                <div class="review-about__right">
+                                                    <div class="thumb">
+                                                        <img src="assets/images/avatar-three.png" alt="Image">
+                                                        <div class="video-wrap">
+                                                            <a
+                                                                href="https://youtu.be/gTg39BoEI90?si=6zX7zO-LCkBd-Zcb"
+                                                                target="_blank"
+                                                                title="video Player"
+                                                                class="video-btn"
+                                                            >
+                                                                <i class="fa-solid fa-play"></i>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="n-t fade-wrapper">
+                                                <h3 class="title-lg">Client Testimonials:</h3>
+                                                <div class="n-t-w">
+                                                    <div class="nt-w-right scrollpanels" id="info">
+                                                        <div class="nt-i activer">
+                                                            <img src="assets/images/avatar-four4.png" alt="Image">
+                                                        </div>
+                                                        <div class="nt-i">
+                                                            <img src="assets/images/avatar-two2.png" alt="Image">
+                                                        </div>
+                                                        <div class="nt-i">
+                                                            <img src="assets/images/avatar1.png" alt="Image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="nt-w-left scrollpanels-content">
+                                                    <div class="nt-s fade-top" id="info1">
+                                                        <div class="nt-s-i">
+                                                            <h4 class="title-lg">
+                                                                <q>
+                                                                    "Working with DDmGurU was a game-changer for our brand. They seamlessly blended design creativity with technical expertise to deliver a website that not only looks stunning but also performs beautifully."
+                                                                </q>
+                                                            </h4>
+                                                            <p>Samantha R.</p>
+                                                            <p class="text-xs">Marketing Director, TechStart</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nt-s fade-top" id="info2">
+                                                        <div class="nt-s-i">
+                                                            <h4 class="title-lg">
+                                                                <q>
+                                                                    "From branding to website development to digital strategy, DDmGurU is a rare find — a true full-package freelancer. Their communication is clear, deadlines are always met, and the results speak for themselves."
+                                                                </q>
+                                                            </h4>
+                                                            <p>David N.</p>
+                                                            <p class="text-xs">Founder, Urban Coffee Co.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="nt-s fade-top" id="info3">
+                                                        <div class="nt-s-i">
+                                                            <h4 class="title-lg">
+                                                                <q>
+                                                                    "What sets DDmGurU apart is their ability to understand our vision and translate it into a cohesive visual and digital experience. The marketing strategies they implemented boosted our engagement by over 40%."
+                                                                </q>
+                                                            </h4>
+                                                            <p>Angela M.</p>
+                                                            <p class="text-xs">CEO, Bloom Wellness</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / banner end ==== -->
+                        <!-- ==== case start ==== -->
+                        <section class="case">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-xxl-10">
+                                        <div class="case__inner">
+                                            <div class="case-single appear-down">
+                                                <div class="row gaper align-items-center justify-content-between">
+                                                    <div class="col-12 col-lg-7">
+                                                        <div class="case__content">
+                                                            <span class="subtitle">case study 01</span>
+                                                            <h4 class="title-md">Concept, Design, app Development</h4>
+                                                            <p class="text-md text-senary">To achieve our goal, we aimed to create a modern and sleek website design that improved user experience, increased engagement, and better reflected the brand's identity.</p>
+                                                            <div class="section__cta">
+                                                                <a href="case-study-single.html" class="btn btn--tertiary">discover project</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-5">
+                                                        <div class="case__thumb">
+                                                            <img src="assets/images/case/one.png" alt="Image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-single appear-down">
+                                                <div class="row gaper align-items-center justify-content-between">
+                                                    <div class="col-12 col-lg-5">
+                                                        <div class="case__thumb">
+                                                            <img src="assets/images/case/two.png" alt="Image">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-7">
+                                                        <div class="case__content">
+                                                            <span class="subtitle">case study 02</span>
+                                                            <h4 class="title-md">Reflecting the emotions. Challenging the</h4>
+                                                            <p class="text-md text-senary">To achieve our goal, we aimed to create a modern and sleek website design that improved user experience, increased engagement, and better reflected the brand's identity.</p>
+                                                            <div class="section__cta">
+                                                                <a href="case-study-single.html" class="btn btn--tertiary">discover project</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-single appear-down">
+                                                <div class="row gaper align-items-center justify-content-between">
+                                                    <div class="col-12 col-lg-7">
+                                                        <div class="case__content">
+                                                            <span class="subtitle">case study 03</span>
+                                                            <h4 class="title-md">Concept, Design, app Development</h4>
+                                                            <p class="text-md text-senary">To achieve our goal, we aimed to create a modern and sleek website design that improved user experience, increased engagement, and better reflected the brand's identity.</p>
+                                                            <div class="section__cta">
+                                                                <a href="case-study-single.html" class="btn btn--tertiary">discover project</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-5">
+                                                        <div class="case__thumb">
+                                                            <img src="assets/images/case/one.png" alt="Image">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="case-single appear-down">
+                                                <div class="row gaper align-items-center justify-content-between">
+                                                    <div class="col-12 col-lg-5">
+                                                        <div class="case__thumb">
+                                                            <img src="assets/images/case/four.png" alt="Image">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-lg-7">
+                                                        <div class="case__content">
+                                                            <span class="subtitle">case study 04</span>
+                                                            <h4 class="title-md">Reflecting the emotions. Challenging the</h4>
+                                                            <p class="text-md text-senary">To achieve our goal, we aimed to create a modern and sleek website design that improved user experience, increased engagement, and better reflected the brand's identity.</p>
+                                                            <div class="section__cta">
+                                                                <a href="case-study-single.html" class="btn btn--tertiary">discover project</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / case end ==== -->
+                        <!-- ==== process start ==== -->
+                        <section class="pt-120 pb-120 process fade-wrapper">
+                            <div class="container">
+                                <div class="row gaper align-items-center">
+                                    <div class="col-12 col-lg-6 col-xxl-5 offset-xxl-1">
+                                        <div class="process__content">
+                                            <div class="section__header">
+                                                <span class="subtitle">My Working Process, Your Dream Website In Just Few Steps</span>
+                                                <h4 class="title-md title-anim">Creating a website shouldn’t feel overwhelming. I’ve streamlined my process to turn your vision into a fully functional, beautiful website in just a few clear, collaborative steps. Here's how we make your dream website a reality:</h4>
+                                            </div>
+                                            <div class="process-wrap">
+                                                <div class="process__single fade-top">
+                                                    <h4 class="title-md">concept</h4>
+                                                    <p class="text-md senary-color">Every great website starts with a clear idea. This phase is all about understanding you—your brand, goals, audience, and what success looks like. We’ll discuss:</p>
+													  </p>
+                                                          <li>Your vision and objectives</li>
+                                                          <li>Core features and functionality</li>
+                                                          <li>Inspiration sites or design references</li>
+                                                          <li>Content planning and structure</li>
+                                                      </p>
+													  <p class="text-md senary-color">The outcome? A solid foundation and a shared vision that guides the rest of the project.</p>
+                                                </div>
+                                                <div class="process__single fade-top">
+                                                    <h4 class="title-md">design</h4>
+                                                    <p class="text-md senary-color">Now it's time to bring ideas to life. I’ll craft a visual experience that’s not just beautiful, but intuitive and user-friendly. In this phase, I focus on:</p>
+													</p>
+                                                          <li>Wireframes and layout structure</li>
+                                                          <li>Branding (colors, fonts, logos)</li>
+                                                          <li>Responsive UI design (mobile & desktop)</li>
+                                                          <li>User experience (UX) optimization</li>
+                                                      </p>
+													  <p class="text-md senary-color">You'll receive design previews to review and approve—ensuring the look and feel matches your expectations before moving to development.</p>
+                                                </div>
+                                                <div class="process__single fade-top">
+                                                    <h4 class="title-md">development</h4>
+                                                    <p class="text-md senary-color">With the design approved, I’ll dive into coding your site using clean, modern, and scalable practices. This step includes:</p>
+													</p>
+                                                          <li>Front-end and back-end development</li>
+                                                          <li>CMS integration (WordPress, Webflow, or custom)</li>
+                                                          <li>Performance and SEO optimization</li>
+                                                          <li>Testing across devices and browsers</li>
+                                                      </p>
+													  <p class="text-md senary-color">Once everything is tested and polished, we’ll go live—and I’ll provide training or documentation so you feel confident managing your new site.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-xxl-5">
+                                        <div class="process__thumb fade-top">
+                                            <img src="assets/images/case/thumb.png" alt="Image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ==== / process end ==== -->
+                        <!-- ==== sponsor start ==== -->
+                        <div class="sponsor fade-wrapper">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-12 col-xxl-10">
+                                        <div class="sponsor__inner fade-top">
+                                            <div class="section__header text-center">
+                                                <span class="subtitle">Brands</span>
+                                                <h4 class="title-md title-anim">I Worked With</h4>
+                                            </div>
+                                            <div class="sponsor__slider ">
+                                                <div class="sponsor__slider-item">
+                                                    <img src="assets/images/sponsor/one.png" alt="Image">
+                                                </div>
+                                                <div class="sponsor__slider-item">
+                                                    <img src="assets/images/sponsor/two.png" alt="Image">
+                                                </div>
+                                                <div class="sponsor__slider-item">
+                                                    <img src="assets/images/sponsor/three.png" alt="Image">
+                                                </div>
+                                                <div class="sponsor__slider-item">
+                                                    <img src="assets/images/sponsor/four.png" alt="Image">
+                                                </div>
+                                                <div class="sponsor__slider-item">
+                                                    <img src="assets/images/sponsor/five.png" alt="Image">
+                                                </div>
+                                                <div class="sponsor__slider-item">
+                                                    <img src="assets/images/sponsor/six.png" alt="Image">
+                                                </div>
+                                                <div class="sponsor__slider-item">
+                                                    <img src="assets/images/sponsor/one.png" alt="Image">
+                                                </div>
+                                                <div class="sponsor__slider-item">
+                                                    <img src="assets/images/sponsor/two.png" alt="Image">
+                                                </div>
+                                                <div class="sponsor__slider-item">
+                                                    <img src="assets/images/sponsor/three.png" alt="Image">
+                                                </div>
+                                                <div class="sponsor__slider-item">
+                                                    <img src="assets/images/sponsor/four.png" alt="Image">
+                                                </div>
+                                                <div class="sponsor__slider-item">
+                                                    <img src="assets/images/sponsor/five.png" alt="Image">
+                                                </div>
+                                                <div class="sponsor__slider-item">
+                                                    <img src="assets/images/sponsor/six.png" alt="Image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="lines d-none d-lg-flex">
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                        <!-- ==== / sponsor end ==== -->
+                    </main>
+                    <!-- ==== footer start ==== -->
+                    <footer class="footer-three pt-120">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-xl-8">
+                                    <div class="footer-three__content">
+                                        <h2 class="title-xxl fw-7 title-anim text-center">
+                                            Let's Make Some Magic ✨ Happen And Show The World What Your Brand Is
+                                                All About!
+                                        </h2>
+                                        <a href="contact-me.html" class="footer__thumb" data-background="assets/images/footer-thumb.png">
+                                            <span class="title-md">Let's talk</span>
+                                        </a>
+                                        <p class="text-center let fw-5 text-capitalize">Let's make your brand the talk of the town</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__copyright">
+                            <div class="container">
+                                <div class="row align-items-center gaper">
+                                    <div class="col-12 col-lg-6">
+                                        <div class="social justify-content-center justify-content-lg-start">
+                                            <a href="https://www.tiktok.com/@ddmguru?_t=ZM-8vsvfZGoRmg&_r=1" target="_blank">
+                                                <i class="fa-brands fa-tiktok"></i>
+												
+                                            </a>
+                                            <a href="https://www.instagram.com/itz.ddm?igsh=MTNvbWU1MmVwazc4dg%3D%3D&utm_source=qr" target="_blank">
+                                                <i class="fa-brands fa-instagram"></i>
+												
+                                            </a>
+                                            <a href="https://pin.it/48XDZGbu9" target="_blank">
+                                                <i class="fa-brands fa-pinterest"></i>
+												
+											</a>
+                                            <a href="https://youtube.com/@ddmguru?si=gFcyQrU4ZfEhPZ0o" target="_blank">
+                                                <i class="fa-brands fa-youtube"></i
+												
+											</a>
+                                            <a href="https://www.facebook.com/share/18ZoJjaJT5/?mibextid=wwXIfr" target="_blank">
+                                                <i class="fa-brands fa-facebook"></i>
+												
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6">
+                                        <div class="footer__copyright-text text-center text-lg-end">
+                                            <p class="text-senary tertiary-text">
+                                                &copy;
+                                                <span id="copyYear"></span>
+                                                . All Rights Reserved
+                                                <a href="index.html" class="fw-6">DDmGurU</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                    <!-- ==== / footer end ==== -->
+                </div>
+            </div>
+        </div>
+        <!-- ==== / page wrapper end ==== -->
+        <!-- ==== scroll to top start ==== -->
+        <button class="progress-wrap" aria-label="scroll indicator" title="go to top">
+            <span></span>
+            <svg
+                class="progress-circle svg-content"
+                width="100%"
+                height="100%"
+                viewBox="-1 -1 102 102"
+            >
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+            </svg>
+        </button>
+        <!-- ==== / scroll to top end ==== -->
+        <!-- ==== js dependencies ==== -->
+        <!-- jquery -->
+        <script src="assets/js/jquery-3.7.0.min.js"></script>
+        <!-- bootstrap five js -->
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- nice select js -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!-- magnific popup js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- slick js -->
+        <script src="assets/js/slick.min.js"></script>
+        <!-- odometer js -->
+        <script src="assets/js/odometer.min.js"></script>
+        <!-- scroll smoother js -->
+        <script src="assets/js/ScrollSmoother.min.js"></script>
+        <!-- splittext js -->
+        <script src="assets/js/SplitText.min.js"></script>
+        <!-- scrollto js -->
+        <script src="assets/js/ScrollToPlugin.min.js"></script>
+        <!-- scrolltrigger js -->
+        <script src="assets/js/ScrollTrigger.min.js"></script>
+        <!-- gsap js -->
+        <script src="assets/js/gsap.min.js"></script>
+        <!-- chroma js -->
+        <script src="assets/js/chroma.min.js"></script>
+        <!-- viewport js -->
+        <script src="assets/js/viewport.jquery.js"></script>
+        <!-- typed js -->
+        <script src="assets/js/typed.umd.js"></script>
+        <!-- ==== / js dependencies end ==== -->
+        <!-- main js -->
+        <script src="assets/js/custom.js"></script>
+        <!-- theme switcher js -->
+        <script src="assets/js/theme-switcher.js"></script>
+    </body>
+</html>
